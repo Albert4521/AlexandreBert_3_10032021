@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "utilities/_variables.scss",
+        "utilities/_functions.scss",
+        "utilities/_mixins.scss",
+        "base/_reset.scss",
+        "base/_typography.scss",
+        "layout/layout.scss",
+        "pages/_index.scss",
+        "pages/_menu.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
