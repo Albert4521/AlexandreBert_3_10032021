@@ -5,7 +5,11 @@
 @import 'base/reset';
 @import 'base/typography';
 
-@import 'layout/layout.scss';
+@import 'layout/layout';
+
+@import 'components/animations';
+@import 'components/cartePlat';
+
 
 @import 'pages/index';
 @import 'pages/menu';

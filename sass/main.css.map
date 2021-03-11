@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AKAA,UAAU;EACN,WAAW,EAAE,QAAQ;EACrB,GAAG,EAAE,4CAA4C,CAAC,kBAAkB;;;AAExE,UAAU;EACN,WAAW,EAAC,WAAW;EACvB,GAAG,EAAE,+CAA+C,CAAC,kBAAkB",
     "sources": [
         "main.scss",
         "utilities/_variables.scss",
@@ -9,6 +9,8 @@
         "base/_reset.scss",
         "base/_typography.scss",
         "layout/layout.scss",
+        "components/_animations.scss",
+        "components/_cartePlat.scss",
         "pages/_index.scss",
         "pages/_menu.scss"
     ],

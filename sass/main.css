@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: 'Roboto';
+  src: url("../../Public/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url("../../Public/fonts/Shrikhand-Regular.ttf") format("truetype");
+}
+/*# sourceMappingURL=main.css.map */
