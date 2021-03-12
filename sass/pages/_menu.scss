@@ -1,0 +1,106 @@
+//Apparition du menu
+.menu{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    min-width: 360px;
+    width: 100%;
+    font-family: 'Roboto';
+    h1{
+        font-family: 'Shrikhand';
+    }
+    &__header{
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        height: auto;
+        &__iconeRetour{
+            width: 7%;
+            height: 2rem;
+            margin: 1% 0 0 3%;
+            background-image: url(../../public/img/icones/FlecheGauche.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &__logo{
+            width: 60%;
+            height: 2rem;
+            margin: 0 15% 0 15% ;
+            background-image: url(../../public/img/logo/ohmyfood.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &__photo{
+            width: 100%;
+            height: 15rem;
+            margin-top: 1rem;
+            padding: 0;
+            background-image: url(../../public/img/restaurants/LaPaletteDuGout.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    }
+    &__entrees{
+        width: 100%;
+        padding: 0 auto;
+        h2{
+            @include appartionTitresMenu(0s);
+        }
+    }
+    &__plats{
+        width: 100%;
+        padding: 0 auto;
+
+        h2{
+            @include appartionTitresMenu(4s);
+        }    
+    }
+    &__desserts{
+        width: 100%;
+        padding: 0 auto;
+
+        h2{
+            @include appartionTitresMenu(8s);
+        }
+    }
+}
+.item{
+    &--1{
+        transform-origin: 50% 0%;
+        animation: Deroulement 1s linear 1s 1 normal backwards;
+    }
+    &--2{
+        transform-origin: 50% 0%;
+        animation: Deroulement 1s linear 2s 1 normal backwards;
+    }
+    &--3{
+        transform-origin: 50% 0%;
+        animation: Deroulement 1s linear 3s 1 normal backwards;
+    }
+    &--4{
+        transform-origin: 50% 0%;
+        animation: Deroulement 1s linear 5s 1 normal backwards;
+    }
+    &--5{
+        transform-origin: 50% 0%;
+        animation: Deroulement 1s linear 6s 1 normal backwards;
+    }
+    &--6{
+        transform-origin: 50% 0%;
+        animation: Deroulement 1s linear 7s 1 normal backwards;
+    }
+    &--7{
+        transform-origin: 50% 0%;
+        animation: Deroulement 1s linear 9s 1 normal backwards;
+    }
+    &--8{
+        transform-origin: 50% 0%;
+        animation: Deroulement 1s linear 10s 1 normal backwards;
+    }
+    &--9{
+        transform-origin: 50% 0%;
+        animation: Deroulement 1s linear 11s 1 normal backwards;
+    }
+}

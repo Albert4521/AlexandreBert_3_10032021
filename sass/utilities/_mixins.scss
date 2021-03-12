@@ -1,0 +1,4 @@
+@mixin appartionTitresMenu($retard) {
+    transform-origin: -50% -50%;
+    animation: Deroulement 1s linear $retard 1 normal backwards;
+}

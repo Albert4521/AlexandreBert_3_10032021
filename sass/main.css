@@ -7,4 +7,449 @@
   font-family: 'Shrikhand';
   src: url("../../Public/fonts/Shrikhand-Regular.ttf") format("truetype");
 }
+
+@-webkit-keyframes Rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  20% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+  30% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  40% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+  50% {
+    -webkit-transform: rotate(200deg);
+            transform: rotate(200deg);
+  }
+  60% {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  70% {
+    -webkit-transform: rotate(280deg);
+            transform: rotate(280deg);
+  }
+  80% {
+    -webkit-transform: rotate(320deg);
+            transform: rotate(320deg);
+  }
+  90% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes Rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+  20% {
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+  30% {
+    -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+  }
+  40% {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+  50% {
+    -webkit-transform: rotate(200deg);
+            transform: rotate(200deg);
+  }
+  60% {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  70% {
+    -webkit-transform: rotate(280deg);
+            transform: rotate(280deg);
+  }
+  80% {
+    -webkit-transform: rotate(320deg);
+            transform: rotate(320deg);
+  }
+  90% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes Deroulement {
+  0% {
+    display: none;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  20% {
+    display: block;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  40% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  60% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  80% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes Deroulement {
+  0% {
+    display: none;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  20% {
+    display: block;
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+  }
+  40% {
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  60% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  80% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+input[id*=Item] {
+  display: none;
+}
+
+.item {
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  -ms-flex-negative: 5;
+      flex-shrink: 5;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  width: 20rem;
+  height: 4rem;
+  margin: 0.8rem auto;
+  padding: 0;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px grey;
+          box-shadow: 0 0 10px grey;
+  font-family: 'Roboto';
+}
+
+.item__principal {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding: 2.0% 0 0 5%;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 1rem;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.item__secondaire {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 80%;
+  height: 50%;
+  margin: 0;
+  padding: 2.0% 0 0 5%;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.8rem;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.item__prix {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 20%;
+  height: 50%;
+  margin: 0;
+  padding: 2.0% 0 0 0;
+  bottom: 50%;
+  left: 80%;
+  border-bottom-right-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.item__encoche {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 0%;
+  height: 100%;
+  margin: 0;
+  bottom: 150%;
+  left: 100%;
+  margin: 0;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.item__encoche img {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50% 50%;
+  margin: 0;
+  padding: 4px;
+  bottom: 26%;
+}
+
+.item:hover > .item__principal, input:checked + label > .item__principal {
+  border-top-right-radius: 0;
+  width: 80%;
+}
+
+.item:hover > .item__secondaire, input:checked + label > .item__secondaire {
+  width: 60%;
+}
+
+.item:hover > .item__prix, input:checked + label > .item__prix {
+  border-bottom-right-radius: 0;
+  left: 60%;
+  padding: 2.0% 5% 0 5%;
+}
+
+.item:hover > .item__encoche, input:checked + label > .item__encoche {
+  padding: 5%;
+  left: 80%;
+  width: 20%;
+}
+
+input:not(:checked) + label:hover > .item__encoche img {
+  -webkit-animation: Rotation 0.6s linear 0s 1 normal;
+          animation: Rotation 0.6s linear 0s 1 normal;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  min-width: 360px;
+  width: 100%;
+  font-family: 'Roboto';
+}
+
+.menu h1 {
+  font-family: 'Shrikhand';
+}
+
+.menu__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  height: auto;
+}
+
+.menu__header__iconeRetour {
+  width: 7%;
+  height: 2rem;
+  margin: 1% 0 0 3%;
+  background-image: url(../../public/img/icones/FlecheGauche.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu__header__logo {
+  width: 60%;
+  height: 2rem;
+  margin: 0 15% 0 15%;
+  background-image: url(../../public/img/logo/ohmyfood.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu__header__photo {
+  width: 100%;
+  height: 15rem;
+  margin-top: 1rem;
+  padding: 0;
+  background-image: url(../../public/img/restaurants/LaPaletteDuGout.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu__entrees {
+  width: 100%;
+  padding: 0 auto;
+}
+
+.menu__entrees h2 {
+  -webkit-transform-origin: -50% -50%;
+          transform-origin: -50% -50%;
+  -webkit-animation: Deroulement 1s linear 0s 1 normal backwards;
+          animation: Deroulement 1s linear 0s 1 normal backwards;
+}
+
+.menu__plats {
+  width: 100%;
+  padding: 0 auto;
+}
+
+.menu__plats h2 {
+  -webkit-transform-origin: -50% -50%;
+          transform-origin: -50% -50%;
+  -webkit-animation: Deroulement 1s linear 4s 1 normal backwards;
+          animation: Deroulement 1s linear 4s 1 normal backwards;
+}
+
+.menu__desserts {
+  width: 100%;
+  padding: 0 auto;
+}
+
+.menu__desserts h2 {
+  -webkit-transform-origin: -50% -50%;
+          transform-origin: -50% -50%;
+  -webkit-animation: Deroulement 1s linear 8s 1 normal backwards;
+          animation: Deroulement 1s linear 8s 1 normal backwards;
+}
+
+.item--1 {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: Deroulement 1s linear 1s 1 normal backwards;
+          animation: Deroulement 1s linear 1s 1 normal backwards;
+}
+
+.item--2 {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: Deroulement 1s linear 2s 1 normal backwards;
+          animation: Deroulement 1s linear 2s 1 normal backwards;
+}
+
+.item--3 {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: Deroulement 1s linear 3s 1 normal backwards;
+          animation: Deroulement 1s linear 3s 1 normal backwards;
+}
+
+.item--4 {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: Deroulement 1s linear 5s 1 normal backwards;
+          animation: Deroulement 1s linear 5s 1 normal backwards;
+}
+
+.item--5 {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: Deroulement 1s linear 6s 1 normal backwards;
+          animation: Deroulement 1s linear 6s 1 normal backwards;
+}
+
+.item--6 {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: Deroulement 1s linear 7s 1 normal backwards;
+          animation: Deroulement 1s linear 7s 1 normal backwards;
+}
+
+.item--7 {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: Deroulement 1s linear 9s 1 normal backwards;
+          animation: Deroulement 1s linear 9s 1 normal backwards;
+}
+
+.item--8 {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: Deroulement 1s linear 10s 1 normal backwards;
+          animation: Deroulement 1s linear 10s 1 normal backwards;
+}
+
+.item--9 {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-animation: Deroulement 1s linear 11s 1 normal backwards;
+          animation: Deroulement 1s linear 11s 1 normal backwards;
+}
 /*# sourceMappingURL=main.css.map */
