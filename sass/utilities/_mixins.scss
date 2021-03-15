@@ -2,3 +2,18 @@
     transform-origin: -50% -50%;
     animation: Deroulement 1s linear $retard 1 normal backwards;
 }
+
+@mixin partieMenu($hausse,$couleurMenu){
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: $hausse;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 auto;
+    background-color: $couleurMenu;
+}

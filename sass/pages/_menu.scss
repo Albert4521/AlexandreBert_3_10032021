@@ -1,69 +1,185 @@
 //Apparition du menu
 .menu{
-    display: flex;
-    flex-flow: column nowrap;
+    position: relative;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    min-width: 360px;
+    min-width: 320px;
+    max-width: 1050px;
     width: 100%;
+    background-color: rgb(235, 235, 235);
     font-family: 'Roboto';
-    h1{
-        font-family: 'Shrikhand';
+    .souligne{
+        text-decoration: underline 3px solid #99E2D0;
     }
     &__header{
+        position: relative;
+        box-sizing: border-box;
         display: flex;
         flex-flow: row wrap;
+        justify-content: stretch;
         width: 100%;
         height: auto;
+        margin: 0;
+        padding-top: 0.7rem;
+        background-color: white;
         &__iconeRetour{
-            width: 7%;
+            box-sizing: border-box;
+            width: 8%;
             height: 2rem;
             margin: 1% 0 0 3%;
             background-image: url(../../public/img/icones/FlecheGauche.svg);
             background-repeat: no-repeat;
             background-size: contain;
+            background-position: top 50%;
+            @media screen and (min-width:550px) {
+                height: 2.5rem;
+            }
+            @media screen and (min-width:812px) {
+                height: 3rem;
+            }
         }
         &__logo{
-            width: 60%;
+            box-sizing: border-box;
+            width: 55%;
             height: 2rem;
-            margin: 0 15% 0 15% ;
+            margin: 0 10% 0 10% ;
             background-image: url(../../public/img/logo/ohmyfood.png);
             background-repeat: no-repeat;
-            background-size: contain;
+            background-size: 100% 100%;
+            @media screen and (min-width:550px) {
+                height: 2.5rem;
+            }
+            @media screen and (min-width:812px) {
+                height: 3rem;
+            }
+
         }
         &__photo{
-            width: 100%;
-            height: 15rem;
-            margin-top: 1rem;
-            padding: 0;
-            background-image: url(../../public/img/restaurants/LaPaletteDuGout.jpg);
+            &--1{
+                position: relative;
+                width: 100%;
+                height: 15rem;
+                margin-top: 1rem;
+                padding: 0;    
+                background-image: url(../../public/img/restaurants/LaPaletteDuGout.jpg);
+                background-clip: border-box;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: left 0% top 60%;
+                @media screen and (max-width:400px) {
+                    background-position: right 0% top 40%;
+                    background-size: 140%;
+                }
+                @media screen and (max-width:550px) {
+                    background-position: left 0% top 45%;
+                }
+                @media screen and (max-width:1150px) {
+                    background-position: left 0% top 65%;
+                }    
+            }
+        }
+    }
+    &__titre{
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color:rgb(235, 235, 235);
+        margin: 0;
+        padding: 0.5rem 0;
+        top: -4rem;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        h1{
+            box-sizing: border-box;
+            font-family: 'Shrikhand';
+            font-size: 1.7rem;
+            height: auto;
+            margin: 0;
+            padding: 1.2rem;
+            width: 90%;
+        }
+        .coeur{
+            background-image: url(../../public/img/icones/CoeurVide.svg);
             background-repeat: no-repeat;
-            background-size: cover;
-
+            background-size: contain;
+            width: 10%;
         }
     }
     &__entrees{
-        width: 100%;
-        padding: 0 auto;
+        @include partieMenu(-5rem,rgb(235, 235, 235));
         h2{
+            box-sizing: border-box;
+            padding-left: 4%;
+            text-transform: uppercase;
             @include appartionTitresMenu(0s);
         }
     }
     &__plats{
-        width: 100%;
-        padding: 0 auto;
-
+        @include partieMenu(-5rem,rgb(235, 235, 235));
         h2{
+            box-sizing: border-box;
+            padding-left: 4%;
+            text-transform: uppercase;
             @include appartionTitresMenu(4s);
         }    
     }
     &__desserts{
-        width: 100%;
-        padding: 0 auto;
-
+        @include partieMenu(-5rem,rgb(235, 235, 235));
         h2{
+            box-sizing: border-box;
+            padding-left: 4%;
+            text-transform: uppercase;
             @include appartionTitresMenu(8s);
         }
+    }
+    &__commande{
+        @include partieMenu(-3rem,rgb(235, 235, 235));
+    }
+    &__footer{
+        @include partieMenu(0,white);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+        background-color: rgb(41,53,66);
+        &__navigation{
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            ul{
+                position: relative;
+                li{
+                    position: relative;
+                    list-style-type: none;
+                    font-size: 1rem;
+                    display: list-item;
+                    margin: 0.25rem 0 0.25rem 0;
+                    &:nth-child(1):before{
+                        content: "";
+                        display: inline-block;
+                        width: 1rem;
+                        height: 1rem;
+                        background: url('../../public/img/icones/Couverts.svg');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        margin-right: 0.7rem;
+                    }
+                    &:nth-child(2):before{
+                        content: "";
+                        display: inline-block;
+                        width: 1rem;
+                        height: 1rem;
+                        transform: rotate(-45deg);
+                        background: url('../../public/img/icones/PoigneeMain.svg');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-position: bottom 50%;
+                        margin-right: 0.7rem;
+                    }
+                }
+            }
+        } 
     }
 }
 .item{
