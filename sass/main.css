@@ -188,106 +188,57 @@ input[id*=Item] {
 
 @media screen and (max-width: 400px) {
   .item {
-    width: 18rem;
-    height: 3.6rem;
-  }
-}
-
-@media screen and (min-width: 400px) and (max-width: 450px) {
-  .item {
     width: 19rem;
     height: 3.8rem;
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 500px) {
-  .item {
-    width: 20rem;
-    height: 4rem;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 550px) {
-  .item {
-    width: 21rem;
-    height: 4.2rem;
-  }
-}
-
-@media screen and (min-width: 550px) and (max-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 450px) {
   .item {
     width: 22rem;
     height: 4.4rem;
   }
 }
 
-@media screen and (min-width: 600px) and (max-width: 650px) {
-  .item {
-    width: 23rem;
-    height: 4.6rem;
-  }
-}
-
-@media screen and (min-width: 650px) and (max-width: 700px) {
-  .item {
-    width: 24rem;
-    height: 4.8rem;
-  }
-}
-
-@media screen and (min-width: 700px) and (max-width: 750px) {
+@media screen and (min-width: 450px) and (max-width: 500px) {
   .item {
     width: 25rem;
     height: 5rem;
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 800px) {
-  .item {
-    width: 26rem;
-    height: 5.2rem;
-  }
-}
-
-@media screen and (min-width: 800px) and (max-width: 850px) {
-  .item {
-    width: 27rem;
-    height: 5.4rem;
-  }
-}
-
-@media screen and (min-width: 850px) and (max-width: 900px) {
+@media screen and (min-width: 500px) and (max-width: 550px) {
   .item {
     width: 28rem;
     height: 5.6rem;
   }
 }
 
-@media screen and (min-width: 900px) and (max-width: 950px) {
-  .item {
-    width: 29rem;
-    height: 5.8rem;
-  }
-}
-
-@media screen and (min-width: 950px) and (max-width: 1000px) {
-  .item {
-    width: 30rem;
-    height: 6rem;
-  }
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1050px) {
+@media screen and (min-width: 550px) and (max-width: 600px) {
   .item {
     width: 31rem;
     height: 6.2rem;
   }
 }
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 600px) and (max-width: 650px) {
   .item {
-    width: 31rem;
-    height: 6.2rem;
+    width: 34rem;
+    height: 6.8rem;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .item {
+    width: 37rem;
+    height: 7.4rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .item {
+    width: 40rem;
+    height: 8rem;
   }
 }
 
@@ -305,26 +256,55 @@ input[id*=Item] {
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: bold;
-  font-size: 1rem;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
   .item__principal {
     font-size: 0.9rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 450px) {
   .item__principal {
     font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (min-width: 450px) and (max-width: 500px) {
   .item__principal {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  .item__principal {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 600px) {
+  .item__principal {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  .item__principal {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .item__principal {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .item__principal {
+    font-size: 1.6rem;
   }
 }
 
@@ -345,21 +325,63 @@ input[id*=Item] {
   transition: all 0.6s ease-in-out;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 400px) {
   .item__secondaire {
     font-size: 0.7rem;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 450px) {
   .item__secondaire {
     font-size: 0.8rem;
   }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (min-width: 450px) and (max-width: 500px) {
   .item__secondaire {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  .item__secondaire {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 600px) {
+  .item__secondaire {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  .item__secondaire {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .item__secondaire {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 750px) {
+  .item__secondaire {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 800px) {
+  .item__secondaire {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .item__secondaire {
+    font-size: 1.6rem;
   }
 }
 
@@ -375,10 +397,69 @@ input[id*=Item] {
   left: 80%;
   border-bottom-right-radius: 20px;
   font-weight: bold;
-  font-size: 1rem;
   text-align: left;
   -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
+}
+
+@media screen and (max-width: 400px) {
+  .item__prix {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  .item__prix {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 500px) {
+  .item__prix {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  .item__prix {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 600px) {
+  .item__prix {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  .item__prix {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .item__prix {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 750px) {
+  .item__prix {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 800px) {
+  .item__prix {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .item__prix {
+    font-size: 1.8rem;
+  }
 }
 
 .item__encoche {
@@ -407,7 +488,77 @@ input[id*=Item] {
   border-radius: 50% 50%;
   margin: 0;
   padding: 4px;
-  bottom: 26%;
+  bottom: 25%;
+}
+
+@media screen and (max-width: 400px) {
+  .item__encoche img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  .item__encoche img {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 500px) {
+  .item__encoche img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 550px) {
+  .item__encoche img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media screen and (min-width: 550px) and (max-width: 600px) {
+  .item__encoche img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 650px) {
+  .item__encoche img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 700px) {
+  .item__encoche img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 750px) {
+  .item__encoche img {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 800px) {
+  .item__encoche img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .item__encoche img {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .item:hover > .item__principal, input:checked + label > .item__principal {
