@@ -17,3 +17,98 @@
     padding: 0 auto;
     background-color: $couleurMenu;
 }
+@mixin styleTitrePrincipal{
+    box-sizing: border-box;
+    font-family: 'Shrikhand';
+    font-size: 1.4rem;
+    height: auto;
+    margin: 0;
+    padding: 1rem;
+    width: 80%;
+    @media screen and (min-width:350px) {
+        font-size: 1.6rem;
+    }
+    @media screen and (min-width:400px) {
+        font-size: 1.8rem;
+    }
+    @media screen and (min-width:500px) {
+        font-size: 2.2rem;
+    }
+    @media screen and (min-width:600px) {
+        font-size: 2.7rem;
+    }
+    @media screen and (min-width:700px) {
+        font-size: 3rem;
+    }
+    @media screen and (min-width:875px) {
+        font-size: 3.8rem;
+    }
+    @media screen and (min-width:1000px) {
+        font-size: 4.1rem;
+    }    
+    
+    
+}
+@mixin tailleCoeur{
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 1.7rem;
+    margin-top: 1rem;
+    @media screen and (min-width:350px) {
+        width: 2rem;
+        height: 2rem;
+        }
+    @media screen and (min-width:400px) {
+        width: 2.5rem;
+        height: 2.5rem;
+        }
+    @media screen and (min-width:500px) {
+        width: 3rem;
+        height: 3rem;
+        }
+    @media screen and (min-width:600px) {
+        width: 3.5rem;
+        height: 3.5rem;
+        }
+    @media screen and (min-width:700px) {
+        width: 4.0rem;
+        height: 4.0rem;
+        }
+    @media screen and (min-width:875px) {
+        width: 4.75rem;
+        height: 4.75rem;
+        }
+    @media screen and (min-width:1000px) {
+        width: 6rem;
+        height: 6rem;
+        }    
+
+}
+@mixin styleTitreSecondaire{
+    font-size: 1.15rem;
+    box-sizing: border-box;
+    padding-left: 4%;
+    text-transform: uppercase;
+    @media screen and (min-width:350px) {
+        font-size: 1.25rem;
+    }
+    @media screen and (min-width:400px) {
+        font-size: 1.4rem;
+    }
+    @media screen and (min-width:500px) {
+        font-size: 1.7rem;
+    }
+    @media screen and (min-width:600px) {
+        font-size: 2rem;
+    }
+    @media screen and (min-width:600px) {
+        font-size: 2.5rem;
+    }
+    @media screen and (min-width:875px) {
+        font-size: 2.8rem;
+    }    
+    @media screen and (min-width:1000px) {
+        font-size: 3rem;
+    }    
+
+}

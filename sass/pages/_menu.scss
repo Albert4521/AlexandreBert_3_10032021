@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     min-width: 320px;
-    max-width: 1050px;
+    max-width: 1112px;
     width: 100%;
     background-color: rgb(235, 235, 235);
     font-family: 'Roboto';
@@ -53,7 +53,6 @@
             @media screen and (min-width:812px) {
                 height: 3rem;
             }
-
         }
         &__photo{
             &--1{
@@ -95,48 +94,34 @@
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
         h1{
-            box-sizing: border-box;
-            font-family: 'Shrikhand';
-            font-size: 1.7rem;
-            height: auto;
-            margin: 0;
-            padding: 1.2rem;
-            width: 80%;
+           @include styleTitrePrincipal;
         }
+
         .coeur{
             background-image: url(../../public/img/icones/CoeurVide.svg);
             background-repeat: no-repeat;
             background-size: cover;
-            width: 2rem;
-            height: 2rem;
-            margin-right: 3rem;
-            margin-top: 1rem;
+            @include tailleCoeur;
         }
     }
     &__entrees{
         @include partieMenu(-5rem,rgb(235, 235, 235));
         h2{
-            box-sizing: border-box;
-            padding-left: 4%;
-            text-transform: uppercase;
+            @include styleTitreSecondaire;
             @include appartionTitresMenu(0s);
         }
     }
     &__plats{
         @include partieMenu(-5rem,rgb(235, 235, 235));
         h2{
-            box-sizing: border-box;
-            padding-left: 4%;
-            text-transform: uppercase;
+            @include styleTitreSecondaire;
             @include appartionTitresMenu(4s);
         }    
     }
     &__desserts{
         @include partieMenu(-5rem,rgb(235, 235, 235));
         h2{
-            box-sizing: border-box;
-            padding-left: 4%;
-            text-transform: uppercase;
+            @include styleTitreSecondaire;
             @include appartionTitresMenu(8s);
         }
     }
@@ -145,16 +130,48 @@
         .bouton{
             position: relative;
             width: 50%;
-            height: 3rem;
+            height: 2.5rem;
             margin: auto 25%;
-            padding-top: 1rem;
-            background-color: hsl(317,100%,74%);
+            padding-top: 0.8rem;
+            background: linear-gradient(135deg,hsl(317,100%,74%),hsl(267,66%,60%)90%);
             border-radius: 2rem 2rem;
+            box-shadow: 0 0 0.6rem rgb(150,150,150);
             text-align: center;
             font-size: 1.3rem;
             font-weight: bold;
             color: white;
+            @media screen and (min-width:600px) {
+                height: 3.5rem;
+                padding-top: 1rem;
+                font-size: 2rem;
+            }
+            @media screen and (min-width:800px) {
+                height: 4rem;
+                padding-top: 0.8rem;
+                font-size: 2.5rem;
+            }
+            @media screen and (min-width:900px) {
+                width: 45%;
+                margin: auto 27.5%;
+            }
+            @media screen and (min-width:1000px) {
+                width: 40%;
+                margin: auto 30%;
+            }
+            @media screen and (min-width:1100px) {
+                width: 38%;
+                margin: auto 31%;
+            }
 
+
+
+
+
+            &:hover{
+                background: linear-gradient(135deg,hsl(317,100%,78%),hsl(267,66%,75%)90%);
+                box-shadow: 0 0 1.2rem rgb(150,150,150);
+                cursor: pointer;
+            }
         }
     }
     &__footer{
@@ -175,11 +192,18 @@
                     font-size: 1rem;
                     display: list-item;
                     margin: 0.25rem 0 0.25rem 0;
+                    @media screen and (min-width:800px) {
+                        font-size: 1.2rem;
+                    }        
                     &:nth-child(1):before{
                         content: "";
                         display: inline-block;
                         width: 1rem;
                         height: 1rem;
+                        @media screen and (min-width:800px) {
+                            width: 1.2rem;
+                            height: 1.2rem;
+                        }        
                         background: url('../../public/img/icones/Couverts.svg');
                         background-repeat: no-repeat;
                         background-size: 100%;
@@ -190,6 +214,10 @@
                         display: inline-block;
                         width: 1rem;
                         height: 1rem;
+                        @media screen and (min-width:800px) {
+                            width: 1.2rem;
+                            height: 1.2rem;
+                        }        
                         transform: rotate(-45deg);
                         background: url('../../public/img/icones/PoigneeMain.svg');
                         background-repeat: no-repeat;
