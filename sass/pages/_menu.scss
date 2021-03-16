@@ -83,6 +83,9 @@
     &__titre{
         box-sizing: border-box;
         position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
         width: 100%;
         height: auto;
         background-color:rgb(235, 235, 235);
@@ -98,13 +101,16 @@
             height: auto;
             margin: 0;
             padding: 1.2rem;
-            width: 90%;
+            width: 80%;
         }
         .coeur{
             background-image: url(../../public/img/icones/CoeurVide.svg);
             background-repeat: no-repeat;
-            background-size: contain;
-            width: 10%;
+            background-size: cover;
+            width: 2rem;
+            height: 2rem;
+            margin-right: 3rem;
+            margin-top: 1rem;
         }
     }
     &__entrees{
@@ -136,6 +142,20 @@
     }
     &__commande{
         @include partieMenu(-3rem,rgb(235, 235, 235));
+        .bouton{
+            position: relative;
+            width: 50%;
+            height: 3rem;
+            margin: auto 25%;
+            padding-top: 1rem;
+            background-color: hsl(317,100%,74%);
+            border-radius: 2rem 2rem;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+
+        }
     }
     &__footer{
         @include partieMenu(0,white);

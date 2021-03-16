@@ -709,6 +709,16 @@ input:not(:checked) + label:hover > .item__encoche img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
   height: auto;
   background-color: #ebebeb;
@@ -727,14 +737,17 @@ input:not(:checked) + label:hover > .item__encoche img {
   height: auto;
   margin: 0;
   padding: 1.2rem;
-  width: 90%;
+  width: 80%;
 }
 
 .menu__titre .coeur {
   background-image: url(../../public/img/icones/CoeurVide.svg);
   background-repeat: no-repeat;
-  background-size: contain;
-  width: 10%;
+  background-size: cover;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
 }
 
 .menu__entrees {
@@ -868,6 +881,20 @@ input:not(:checked) + label:hover > .item__encoche img {
           align-items: flex-start;
   padding: 0 auto;
   background-color: #ebebeb;
+}
+
+.menu__commande .bouton {
+  position: relative;
+  width: 50%;
+  height: 3rem;
+  margin: auto 25%;
+  padding-top: 1rem;
+  background-color: #ff7ad9;
+  border-radius: 2rem 2rem;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
 }
 
 .menu__footer {
