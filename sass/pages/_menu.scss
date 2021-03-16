@@ -10,7 +10,14 @@
     background-color: rgb(235, 235, 235);
     font-family: 'Roboto';
     .souligne{
-        text-decoration: underline 3px solid #99E2D0;
+        text-decoration: underline 4px solid #99E2D0;
+        @media screen and (min-width:550px) {
+            text-decoration: underline 6px solid #99E2D0;
+        }
+        @media screen and (min-width:800px) {
+            text-decoration: underline 8px solid #99E2D0;
+        }
+
     }
     &__header{
         position: relative;
@@ -93,6 +100,10 @@
         top: -4rem;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
+        @media screen and (min-width:750px) {
+            top: -2rem;
+        }
+
         h1{
            @include styleTitrePrincipal;
         }
@@ -105,28 +116,28 @@
         }
     }
     &__entrees{
-        @include partieMenu(-5rem,rgb(235, 235, 235));
+        @include partieMenu(-3.8rem,rgb(235, 235, 235));
         h2{
             @include styleTitreSecondaire;
             @include appartionTitresMenu(0s);
         }
     }
     &__plats{
-        @include partieMenu(-5rem,rgb(235, 235, 235));
+        @include partieMenu(-3.8rem,rgb(235, 235, 235));
         h2{
             @include styleTitreSecondaire;
             @include appartionTitresMenu(4s);
         }    
     }
     &__desserts{
-        @include partieMenu(-5rem,rgb(235, 235, 235));
+        @include partieMenu(-3.8rem,rgb(235, 235, 235));
         h2{
             @include styleTitreSecondaire;
             @include appartionTitresMenu(8s);
         }
     }
     &__commande{
-        @include partieMenu(-3rem,rgb(235, 235, 235));
+        @include partieMenu(-2.6rem,rgb(235, 235, 235));
         .bouton{
             position: relative;
             width: 50%;

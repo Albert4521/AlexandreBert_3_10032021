@@ -613,8 +613,22 @@ input:not(:checked) + label:hover > .item__encoche img {
 }
 
 .menu .souligne {
-  -webkit-text-decoration: underline 3px solid #99E2D0;
-          text-decoration: underline 3px solid #99E2D0;
+  -webkit-text-decoration: underline 4px solid #99E2D0;
+          text-decoration: underline 4px solid #99E2D0;
+}
+
+@media screen and (min-width: 550px) {
+  .menu .souligne {
+    -webkit-text-decoration: underline 6px solid #99E2D0;
+            text-decoration: underline 6px solid #99E2D0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .menu .souligne {
+    -webkit-text-decoration: underline 8px solid #99E2D0;
+            text-decoration: underline 8px solid #99E2D0;
+  }
 }
 
 .menu__header {
@@ -741,7 +755,14 @@ input:not(:checked) + label:hover > .item__encoche img {
   border-top-right-radius: 2rem;
 }
 
+@media screen and (min-width: 750px) {
+  .menu__titre {
+    top: -2rem;
+  }
+}
+
 .menu__titre h1 {
+  position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: 'Shrikhand';
@@ -860,7 +881,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   width: 100%;
   margin: 0;
   padding: 0;
-  top: -5rem;
+  top: -3.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -882,6 +903,8 @@ input:not(:checked) + label:hover > .item__encoche img {
   font-size: 1.15rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-top: 0.9rem;
+  padding-top: 0;
   padding-left: 4%;
   text-transform: uppercase;
   -webkit-transform-origin: -50% -50%;
@@ -939,7 +962,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   width: 100%;
   margin: 0;
   padding: 0;
-  top: -5rem;
+  top: -3.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -961,6 +984,8 @@ input:not(:checked) + label:hover > .item__encoche img {
   font-size: 1.15rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-top: 0.9rem;
+  padding-top: 0;
   padding-left: 4%;
   text-transform: uppercase;
   -webkit-transform-origin: -50% -50%;
@@ -1018,7 +1043,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   width: 100%;
   margin: 0;
   padding: 0;
-  top: -5rem;
+  top: -3.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1040,6 +1065,8 @@ input:not(:checked) + label:hover > .item__encoche img {
   font-size: 1.15rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-top: 0.9rem;
+  padding-top: 0;
   padding-left: 4%;
   text-transform: uppercase;
   -webkit-transform-origin: -50% -50%;
@@ -1097,7 +1124,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   width: 100%;
   margin: 0;
   padding: 0;
-  top: -3rem;
+  top: -2.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -18,6 +18,7 @@
     background-color: $couleurMenu;
 }
 @mixin styleTitrePrincipal{
+    position: relative;
     box-sizing: border-box;
     font-family: 'Shrikhand';
     font-size: 1.4rem;
@@ -87,6 +88,8 @@
 @mixin styleTitreSecondaire{
     font-size: 1.15rem;
     box-sizing: border-box;
+    margin-top: 0.9rem;
+    padding-top: 0;
     padding-left: 4%;
     text-transform: uppercase;
     @media screen and (min-width:350px) {
