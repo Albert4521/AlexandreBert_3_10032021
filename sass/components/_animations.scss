@@ -13,23 +13,11 @@
 }
 @keyframes Deroulement{
     0%{
-        display: none;
-        transform: scale(0);
+        opacity:0 ;
+        margin-top: 10px;
     }
-    20%{
-        display: block;
-        transform: scale(0.2);
-    }
-    40%{
-        transform: scale(0.4);
-    }
-    60%{
-        transform: scale(0.6);
-    }    
-    80%{
-        transform: scale(0.8);
-    }    
     100%{
-        transform: scale(1.0);
+        opacity:1;
+        margin-top: 0px;
     }       
 }

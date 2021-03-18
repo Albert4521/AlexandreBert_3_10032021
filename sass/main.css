@@ -104,59 +104,23 @@
 
 @-webkit-keyframes Deroulement {
   0% {
-    display: none;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  20% {
-    display: block;
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
-  }
-  40% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-  }
-  60% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  80% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    opacity: 0;
+    margin-top: 10px;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
+    margin-top: 0px;
   }
 }
 
 @keyframes Deroulement {
   0% {
-    display: none;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  20% {
-    display: block;
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
-  }
-  40% {
-    -webkit-transform: scale(0.4);
-            transform: scale(0.4);
-  }
-  60% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  80% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    opacity: 0;
+    margin-top: 10px;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
+    margin-top: 0px;
   }
 }
 
@@ -724,7 +688,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  max-width: 1112px;
+  max-width: 1150px;
   width: 100%;
   background-color: #ebebeb;
   font-family: 'Roboto';
@@ -774,46 +738,106 @@ input:not(:checked) + label:hover > .item__encoche img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 8%;
-  height: 2rem;
-  margin: 1% 0 0 3%;
+  height: 2.5rem;
+  margin: 3% 0 0 2.5%;
   background-image: url(../../public/img/icones/FlecheGauche.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top 50%;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 400px) {
   .menu__header__iconeRetour {
-    height: 2.5rem;
+    margin: 2.6% 0 0 3%;
   }
 }
 
-@media screen and (min-width: 812px) {
+@media screen and (min-width: 500px) {
+  .menu__header__iconeRetour {
+    margin: 2.2% 0 0 3%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu__header__iconeRetour {
+    margin: 2% 0 0 3%;
+  }
+}
+
+@media screen and (min-width: 800px) {
   .menu__header__iconeRetour {
     height: 3rem;
+    margin: 1.7% 0 0 3%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu__header__iconeRetour {
+    height: 3rem;
+    margin: 1.4% 0 0 3%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu__header__iconeRetour {
+    height: 3.2rem;
+    margin: 1.2% 0 0 3%;
   }
 }
 
 .menu__header__logo {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 55%;
-  height: 2rem;
+  position: relative;
+  width: 69%;
+  height: 2.5rem;
   margin: 0 10% 0 10%;
-  background-image: url(../../public/img/logo/ohmyfood.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  padding-top: 0.3rem;
+  font-family: 'Shrikhand';
+  font-size: 2rem;
+  text-align: center;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 400px) {
   .menu__header__logo {
-    height: 2.5rem;
+    font-size: 2.25rem;
+    padding-top: 0.3rem;
   }
 }
 
-@media screen and (min-width: 812px) {
+@media screen and (min-width: 500px) {
   .menu__header__logo {
-    height: 3rem;
+    font-size: 2.5rem;
+    margin: 0 10% 0 5%;
+    padding-bottom: 3rem;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu__header__logo {
+    font-size: 2.75rem;
+    margin: 0 10% 0 5%;
+    padding-bottom: 3.5rem;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu__header__logo {
+    font-size: 3rem;
+    margin: 0 10% 0 5%;
+    padding-bottom: 4rem;
+    padding-top: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .menu__header__logo {
+    font-size: 3.25rem;
+    margin: 0 10% 0 5%;
+    padding-bottom: 4rem;
+    padding-top: 0;
   }
 }
 
@@ -827,25 +851,53 @@ input:not(:checked) + label:hover > .item__encoche img {
   background-clip: border-box;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left 0% top 60%;
 }
 
 @media screen and (max-width: 400px) {
   .menu__header__photo--1 {
-    background-position: right 0% top 40%;
-    background-size: 140%;
+    background-position: left 0% top 40%;
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   .menu__header__photo--1 {
-    background-position: left 0% top 45%;
+    background-position: left 0% top 70%;
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 600px) {
   .menu__header__photo--1 {
-    background-position: left 0% top 65%;
+    background-position: left 25% top 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu__header__photo--1 {
+    background-position: left 0% top 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menu__header__photo--1 {
+    background-position: left 0% top 40%;
+  }
+}
+
+@media screen and (max-width: 900) {
+  .menu__header__photo--1 {
+    background-position: left 0% top 25%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu__header__photo--1 {
+    background-position: left 0% top 60%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu__header__photo--1 {
+    background-position: left 0% top 62%;
   }
 }
 
@@ -867,8 +919,8 @@ input:not(:checked) + label:hover > .item__encoche img {
   height: auto;
   background-color: #ebebeb;
   margin: 0;
-  padding: 0.5rem 0;
-  top: -4rem;
+  padding: 10% 0;
+  top: -3rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
@@ -879,7 +931,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   }
 }
 
-.menu__titre h1 {
+.menu__titre h2 {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -892,44 +944,44 @@ input:not(:checked) + label:hover > .item__encoche img {
 }
 
 @media screen and (min-width: 350px) {
-  .menu__titre h1 {
+  .menu__titre h2 {
     font-size: 1.6rem;
   }
 }
 
 @media screen and (min-width: 400px) {
-  .menu__titre h1 {
+  .menu__titre h2 {
     font-size: 1.8rem;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .menu__titre h1 {
+  .menu__titre h2 {
     font-size: 2.2rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .menu__titre h1 {
+  .menu__titre h2 {
     font-size: 2.7rem;
   }
 }
 
 @media screen and (min-width: 700px) {
-  .menu__titre h1 {
+  .menu__titre h2 {
     font-size: 3rem;
   }
 }
 
 @media screen and (min-width: 875px) {
-  .menu__titre h1 {
-    font-size: 3.8rem;
+  .menu__titre h2 {
+    font-size: 3.3rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .menu__titre h1 {
-    font-size: 4.1rem;
+  .menu__titre h2 {
+    font-size: 3.8rem;
   }
 }
 
@@ -980,15 +1032,15 @@ input:not(:checked) + label:hover > .item__encoche img {
 
 @media screen and (min-width: 875px) {
   .menu__titre .coeur {
-    width: 4.75rem;
-    height: 4.75rem;
+    width: 4.5rem;
+    height: 4.5rem;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .menu__titre .coeur {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
 
@@ -1017,7 +1069,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   background-color: #ebebeb;
 }
 
-.menu__entrees h2 {
+.menu__entrees h3 {
   font-size: 1.15rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1025,51 +1077,45 @@ input:not(:checked) + label:hover > .item__encoche img {
   padding-top: 0;
   padding-left: 4%;
   text-transform: uppercase;
-  -webkit-transform-origin: -50% -50%;
-          transform-origin: -50% -50%;
-  -webkit-animation: Deroulement 1s linear 0s 1 normal backwards;
-          animation: Deroulement 1s linear 0s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 0s 1 normal backwards;
+          animation: Deroulement 0.5s linear 0s 1 normal backwards;
 }
 
 @media screen and (min-width: 350px) {
-  .menu__entrees h2 {
+  .menu__entrees h3 {
     font-size: 1.25rem;
   }
 }
 
 @media screen and (min-width: 400px) {
-  .menu__entrees h2 {
+  .menu__entrees h3 {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .menu__entrees h2 {
+  .menu__entrees h3 {
     font-size: 1.7rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .menu__entrees h2 {
+  .menu__entrees h3 {
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .menu__entrees h2 {
+  .menu__entrees h3 {
     font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 875px) {
-  .menu__entrees h2 {
-    font-size: 2.8rem;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .menu__entrees h2 {
-    font-size: 3rem;
+  .menu__entrees h3 {
+    font-size: 2.6rem;
   }
 }
 
@@ -1098,7 +1144,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   background-color: #ebebeb;
 }
 
-.menu__plats h2 {
+.menu__plats h3 {
   font-size: 1.15rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1106,51 +1152,45 @@ input:not(:checked) + label:hover > .item__encoche img {
   padding-top: 0;
   padding-left: 4%;
   text-transform: uppercase;
-  -webkit-transform-origin: -50% -50%;
-          transform-origin: -50% -50%;
-  -webkit-animation: Deroulement 1s linear 4s 1 normal backwards;
-          animation: Deroulement 1s linear 4s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 2s 1 normal backwards;
+          animation: Deroulement 0.5s linear 2s 1 normal backwards;
 }
 
 @media screen and (min-width: 350px) {
-  .menu__plats h2 {
+  .menu__plats h3 {
     font-size: 1.25rem;
   }
 }
 
 @media screen and (min-width: 400px) {
-  .menu__plats h2 {
+  .menu__plats h3 {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .menu__plats h2 {
+  .menu__plats h3 {
     font-size: 1.7rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .menu__plats h2 {
+  .menu__plats h3 {
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .menu__plats h2 {
+  .menu__plats h3 {
     font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 875px) {
-  .menu__plats h2 {
-    font-size: 2.8rem;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .menu__plats h2 {
-    font-size: 3rem;
+  .menu__plats h3 {
+    font-size: 2.6rem;
   }
 }
 
@@ -1179,7 +1219,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   background-color: #ebebeb;
 }
 
-.menu__desserts h2 {
+.menu__desserts h3 {
   font-size: 1.15rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1187,51 +1227,45 @@ input:not(:checked) + label:hover > .item__encoche img {
   padding-top: 0;
   padding-left: 4%;
   text-transform: uppercase;
-  -webkit-transform-origin: -50% -50%;
-          transform-origin: -50% -50%;
-  -webkit-animation: Deroulement 1s linear 8s 1 normal backwards;
-          animation: Deroulement 1s linear 8s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 4s 1 normal backwards;
+          animation: Deroulement 0.5s linear 4s 1 normal backwards;
 }
 
 @media screen and (min-width: 350px) {
-  .menu__desserts h2 {
+  .menu__desserts h3 {
     font-size: 1.25rem;
   }
 }
 
 @media screen and (min-width: 400px) {
-  .menu__desserts h2 {
+  .menu__desserts h3 {
     font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .menu__desserts h2 {
+  .menu__desserts h3 {
     font-size: 1.7rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .menu__desserts h2 {
+  .menu__desserts h3 {
     font-size: 2rem;
   }
 }
 
 @media screen and (min-width: 600px) {
-  .menu__desserts h2 {
+  .menu__desserts h3 {
     font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 875px) {
-  .menu__desserts h2 {
-    font-size: 2.8rem;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .menu__desserts h2 {
-    font-size: 3rem;
+  .menu__desserts h3 {
+    font-size: 2.6rem;
   }
 }
 
@@ -1414,65 +1448,65 @@ input:not(:checked) + label:hover > .item__encoche img {
 }
 
 .item--1 {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: Deroulement 1s linear 1s 1 normal backwards;
-          animation: Deroulement 1s linear 1s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
 }
 
 .item--2 {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: Deroulement 1s linear 2s 1 normal backwards;
-          animation: Deroulement 1s linear 2s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 1s 1 normal backwards;
+          animation: Deroulement 0.5s linear 1s 1 normal backwards;
 }
 
 .item--3 {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: Deroulement 1s linear 3s 1 normal backwards;
-          animation: Deroulement 1s linear 3s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
 }
 
 .item--4 {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: Deroulement 1s linear 5s 1 normal backwards;
-          animation: Deroulement 1s linear 5s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
 }
 
 .item--5 {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: Deroulement 1s linear 6s 1 normal backwards;
-          animation: Deroulement 1s linear 6s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 3s 1 normal backwards;
+          animation: Deroulement 0.5s linear 3s 1 normal backwards;
 }
 
 .item--6 {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: Deroulement 1s linear 7s 1 normal backwards;
-          animation: Deroulement 1s linear 7s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
 }
 
 .item--7 {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: Deroulement 1s linear 9s 1 normal backwards;
-          animation: Deroulement 1s linear 9s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
 }
 
 .item--8 {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: Deroulement 1s linear 10s 1 normal backwards;
-          animation: Deroulement 1s linear 10s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 5s 1 normal backwards;
 }
 
 .item--9 {
-  -webkit-transform-origin: 50% 0%;
-          transform-origin: 50% 0%;
-  -webkit-animation: Deroulement 1s linear 11s 1 normal backwards;
-          animation: Deroulement 1s linear 11s 1 normal backwards;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 5.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 5.5s 1 normal backwards;
 }
 /*# sourceMappingURL=main.css.map */
