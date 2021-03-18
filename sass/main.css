@@ -571,7 +571,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  max-width: 1112px;
+  max-width: 1150px;
   width: 100%;
   background-color: #ebebeb;
   font-family: 'Roboto';
@@ -590,25 +590,40 @@ input:not(:checked) + label:hover > .item__encoche img {
           box-sizing: border-box;
   position: relative;
   width: 100%;
-  height: 5rem;
-  margin: 0;
-  padding: 0.6rem;
-  background-image: url(../../public/img/logo/ohmyfood.png);
-  background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
+  height: 2.5rem;
+  margin-top: 1%;
+  font-family: 'Shrikhand';
+  font-size: 2rem;
+  text-align: center;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 400px) {
   .Accueil .header__logo {
-    height: 6rem;
+    font-size: 2.25rem;
   }
 }
 
-@media screen and (min-width: 812px) {
+@media screen and (min-width: 500px) {
   .Accueil .header__logo {
-    height: 7rem;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Accueil .header__logo {
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .Accueil .header__logo {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .Accueil .header__logo {
+    font-size: 3.25rem;
   }
 }
 
@@ -619,7 +634,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   width: 100%;
   height: 3rem;
   margin: 0;
-  padding: 0;
+  padding: 0 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,13 +648,43 @@ input:not(:checked) + label:hover > .item__encoche img {
   background-color: #afafaf;
 }
 
+@media screen and (min-width: 450px) {
+  .Accueil .header__localisation {
+    padding: 0 24%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .Accueil .header__localisation {
+    padding: 0 25%;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .Accueil .header__localisation {
+    padding: 0 26%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .Accueil .header__localisation {
+    padding: 0 27%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .Accueil .header__localisation {
+    padding: 0 32%;
+  }
+}
+
 .Accueil .header__localisation__icone {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   width: 2rem;
   height: 2rem;
-  margin: auto 0 auto 30%;
+  margin: auto 0.25rem auto 0;
   background-image: url(../../public/img/icones/Localisation.svg);
   background-color: #afafaf;
   background-position: center;
@@ -651,34 +696,116 @@ input:not(:checked) + label:hover > .item__encoche img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  width: 70%;
+  width: 65%;
   height: 100%;
-  margin: 0;
+  margin: 0 0 0 0.25rem;
   border: 0;
   outline: 0;
   background-color: #afafaf;
   color: black;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
-.Accueil .headertitre__1 {
+.Accueil .header__titre1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   width: 100%;
   height: auto;
-  margin: 0;
-  padding: auto 15%;
+  margin: 5% 0 2% 0;
+  padding: 0 16% 0 16%;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-.Accueil .headertitre__2 {
+@media screen and (min-width: 700px) {
+  .Accueil .header__titre1 {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Accueil .header__titre1 {
+    font-size: 2rem;
+  }
+}
+
+.Accueil .header__titre2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
   width: 100%;
   height: auto;
-  margin: 0;
-  padding: auto 15%;
+  margin: 2% 0 5% 0;
+  padding: 0 7% 0 7%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 700px) {
+  .Accueil .header__titre2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Accueil .header__titre2 {
+    font-size: 1.5rem;
+  }
+}
+
+.Accueil .header__bouton {
+  position: relative;
+  width: 60%;
+  min-width: 13rem;
+  max-width: 18rem;
+  height: 2.5rem;
+  margin: auto;
+  padding-top: 0.8rem;
+  background: linear-gradient(135deg, #ff7ad9, #9256dc 90%);
+  border-radius: 2rem 2rem;
+  -webkit-box-shadow: 0 0 0.6rem #969696;
+          box-shadow: 0 0 0.6rem #969696;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (min-width: 360px) {
+  .Accueil .header__bouton {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .Accueil .header__bouton {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Accueil .header__bouton {
+    font-size: 1.3rem;
+  }
+}
+
+.Accueil .header__bouton:hover {
+  background: linear-gradient(135deg, #ff8fdf, #bb95e9 90%);
+  -webkit-box-shadow: 0 0 1.2rem #969696;
+          box-shadow: 0 0 1.2rem #969696;
+  cursor: pointer;
+}
+
+.Accueil .fonction {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 2rem 0.75rem 2rem 0.75rem;
+  margin: 2rem 0 2rem 0;
+  background-color: #fff;
 }
 
 .menu {
