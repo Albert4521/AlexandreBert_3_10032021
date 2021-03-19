@@ -568,6 +568,7 @@ input:not(:checked) + label:hover > .item__encoche img {
           box-sizing: border-box;
   position: relative;
   width: 90%;
+  max-width: 43rem;
   height: 18rem;
   margin: 0 5% 3% 5%;
   padding: 0;
@@ -715,6 +716,195 @@ input:not(:checked) + label:hover > .item__encoche img {
   height: 15%;
   padding: 0;
   margin: 0.6% 2% 2% 4%;
+}
+
+.fonction__carte {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ebebeb;
+  width: 90%;
+  max-width: 35rem;
+  height: 5rem;
+  margin: 5% 5% 5% 5%;
+  padding: 0;
+  border-radius: 1rem 1rem;
+  -webkit-box-shadow: 0 0 0.8rem #afafaf;
+          box-shadow: 0 0 0.8rem #afafaf;
+}
+
+@media screen and (min-width: 400px) {
+  .fonction__carte {
+    height: 6rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .fonction__carte {
+    height: 7rem;
+  }
+}
+
+.fonction__carte__num {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0.4em;
+  left: -5%;
+  border-radius: 50% 50%;
+  background-color: #9356DC;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+@media screen and (min-width: 425px) {
+  .fonction__carte__num {
+    left: -4.75%;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .fonction__carte__num {
+    left: -4.5%;
+    width: 2.25rem;
+    height: 2.25rem;
+    font-size: 1.2rem;
+    padding: 0.35em;
+  }
+}
+
+@media screen and (min-width: 475px) {
+  .fonction__carte__num {
+    left: -4.25%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .fonction__carte__num {
+    left: -4%;
+  }
+}
+
+@media screen and (min-width: 525px) {
+  .fonction__carte__num {
+    left: -3.75%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .fonction__carte__num {
+    left: -3.85%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.4rem;
+    padding: 0.25em;
+  }
+}
+
+@media screen and (min-width: 575px) {
+  .fonction__carte__num {
+    left: -3.7%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .fonction__carte__num {
+    left: -3.6%;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .fonction__carte__num {
+    left: -3.3%;
+  }
+}
+
+.fonction__carte__icone {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 13%;
+}
+
+.fonction__carte__icone--1 {
+  background-image: url(../../public/img/icones/Smartphone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fonction__carte__icone--2 {
+  background-image: url(../../public/img/icones/Liste.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fonction__carte__icone--3 {
+  background-image: url(../../public/img/icones/Store.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 400px) {
+  .fonction__carte__icone {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .fonction__carte__icone {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .fonction__carte__icone {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+}
+
+.fonction__carte__texte {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 70%;
+  height: 1.5rem;
+  left: 27%;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 400px) {
+  .fonction__carte__texte {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .fonction__carte__texte {
+    font-size: 1.4rem;
+  }
 }
 
 .Accueil {
@@ -962,6 +1152,15 @@ input:not(:checked) + label:hover > .item__encoche img {
   background-color: #fff;
 }
 
+.Accueil .fonction__titre {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  font-size: 1.8rem;
+  margin-left: 6%;
+}
+
 .Accueil .resto {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -983,6 +1182,15 @@ input:not(:checked) + label:hover > .item__encoche img {
   text-decoration: none;
   color: black;
   font-weight: normal;
+}
+
+.Accueil .resto__titre {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  font-size: 1.8rem;
+  margin-left: 6%;
 }
 
 .menu {

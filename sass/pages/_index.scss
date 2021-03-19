@@ -162,6 +162,13 @@
         padding: 2rem 0.75rem 2rem 0.75rem;
         margin: 2rem 0 0 0;
         background-color: #fff;
+        &__titre{
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            font-size: 1.8rem;
+            margin-left: 6%;
+        }
     }
     .resto{
         box-sizing: border-box;
@@ -176,5 +183,12 @@
         text-decoration: none;
         color: black;
         font-weight: normal;
+        &__titre{
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            font-size: 1.8rem;
+            margin-left: 6%;
+        }
     }
 }
