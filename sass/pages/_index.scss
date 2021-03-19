@@ -160,7 +160,21 @@
         position: relative;
         width: 100%;
         padding: 2rem 0.75rem 2rem 0.75rem;
-        margin: 2rem 0 2rem 0;
+        margin: 2rem 0 0 0;
         background-color: #fff;
+    }
+    .resto{
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 2rem 0.75rem 1rem 0.75rem;
+        margin: 1rem 0 2rem 0;
+        background-color: rgb(235, 235, 235);
+        text-decoration: none;
+        color: black;
+        font-weight: normal;
     }
 }

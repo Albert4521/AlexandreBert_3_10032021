@@ -1,0 +1,110 @@
+.carte{
+    box-sizing: border-box;
+    position: relative;
+    width: 90%;
+    height: 18rem;
+    margin: 0 5% 3% 5%;
+    padding: 0;
+    border-radius: 2rem 2rem;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1rem;
+    &:any-link{
+        text-decoration: 0;
+        color: black;
+        font-weight: normal;
+    }
+    &__photo{
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: 70%;
+        margin: 0;
+        padding: 0;
+        border-top-left-radius: 2rem 2rem;
+        border-top-right-radius: 2rem 2rem;
+        &__nouveau{
+            box-sizing: border-box;
+            position: absolute;
+            width: 25%;
+            min-width: 4.8rem;
+            height: 16%;
+            top: 10%;
+            right: 4%;
+            padding: 1% 1%;
+            background-color: hsl(165,56%,74%);
+            color: hsl(165,56%,34%);
+            font-weight: bold;
+            text-align: center;
+        }
+        &--1{
+            background-image: url(../../public/img/restaurants/LaPaletteDuGout.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &--2{
+            background-image: url(../../public/img/restaurants/LaNoteEnchantee.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &--3{
+            background-image: url(../../public/img/restaurants/LaFrancaise.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &--4{
+            background-image: url(../../public/img/restaurants/LeDeliceDesSens.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+    }
+    &__nom{
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        width: 100%;
+        height: 15%;
+        padding: 0;
+        margin: 2% 2% 0.6% 4%;
+        &__texte{
+            box-sizing: border-box;
+            position: absolute;
+            top: 0%;
+            left:0%;
+            width: 70%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+        }
+        &__coeur{
+            box-sizing: border-box;
+            position: absolute;
+            top: 0%;
+            left: 83%;
+            background-image: url(../../public/img/icones/CoeurVide.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1.8rem;
+            height: 1.8rem;
+            padding: 0;
+            margin: 0;  
+        }
+    }
+    &__lieu{
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: 15%;
+        padding: 0;
+        margin: 0.6% 2% 2% 4%;
+    }
+}
