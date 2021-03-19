@@ -239,6 +239,12 @@
         padding-bottom: 1rem;
         color: white;
         background-color: rgb(41,53,66);
+        &__logo{
+            font-family: 'Shrikhand';
+            font-size: 1.2rem;
+            color: white;
+            margin-left: 2.25rem;
+        }
         &__navigation{
             box-sizing: border-box;
             position: relative;

@@ -191,4 +191,66 @@
             margin-left: 6%;
         }
     }
+    .footer{
+        @include partieMenu(0,white);
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: white;
+        background-color: rgb(41,53,66);
+        &__logo{
+            font-family: 'Shrikhand';
+            font-size: 1.2rem;
+            color: white;
+            margin-left: 2.25rem;
+        }
+        &__navigation{
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            ul{
+                position: relative;
+                li{
+                    position: relative;
+                    list-style-type: none;
+                    font-size: 1rem;
+                    display: list-item;
+                    margin: 0.25rem 0 0.25rem 0;
+                    @media screen and (min-width:800px) {
+                        font-size: 1.2rem;
+                    }        
+                    &:nth-child(1):before{
+                        content: "";
+                        display: inline-block;
+                        width: 1rem;
+                        height: 1rem;
+                        @media screen and (min-width:800px) {
+                            width: 1.2rem;
+                            height: 1.2rem;
+                        }        
+                        background: url('../../public/img/icones/Couverts.svg');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        margin-right: 0.7rem;
+                    }
+                    &:nth-child(2):before{
+                        content: "";
+                        display: inline-block;
+                        width: 1rem;
+                        height: 1rem;
+                        @media screen and (min-width:800px) {
+                            width: 1.2rem;
+                            height: 1.2rem;
+                        }        
+                        transform: rotate(-45deg);
+                        background: url('../../public/img/icones/PoigneeMain.svg');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-position: bottom 50%;
+                        margin-right: 0.7rem;
+                    }
+                }
+            }
+        } 
+    }
+
 }

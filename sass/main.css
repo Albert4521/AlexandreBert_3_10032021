@@ -1193,6 +1193,106 @@ input:not(:checked) + label:hover > .item__encoche img {
   margin-left: 6%;
 }
 
+.Accueil .footer {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 auto;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  background-color: #293542;
+}
+
+.Accueil .footer__logo {
+  font-family: 'Shrikhand';
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 2.25rem;
+}
+
+.Accueil .footer__navigation {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  width: 100%;
+}
+
+.Accueil .footer__navigation ul {
+  position: relative;
+}
+
+.Accueil .footer__navigation ul li {
+  position: relative;
+  list-style-type: none;
+  font-size: 1rem;
+  display: list-item;
+  margin: 0.25rem 0 0.25rem 0;
+}
+
+@media screen and (min-width: 800px) {
+  .Accueil .footer__navigation ul li {
+    font-size: 1.2rem;
+  }
+}
+
+.Accueil .footer__navigation ul li:nth-child(1):before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background: url("../../public/img/icones/Couverts.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 0.7rem;
+}
+
+@media screen and (min-width: 800px) {
+  .Accueil .footer__navigation ul li:nth-child(1):before {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
+.Accueil .footer__navigation ul li:nth-child(2):before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: url("../../public/img/icones/PoigneeMain.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom 50%;
+  margin-right: 0.7rem;
+}
+
+@media screen and (min-width: 800px) {
+  .Accueil .footer__navigation ul li:nth-child(2):before {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
 .menu {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1898,6 +1998,13 @@ input:not(:checked) + label:hover > .item__encoche img {
   padding-bottom: 1rem;
   color: white;
   background-color: #293542;
+}
+
+.menu__footer__logo {
+  font-family: 'Shrikhand';
+  font-size: 1.2rem;
+  color: white;
+  margin-left: 2.25rem;
 }
 
 .menu__footer__navigation {
