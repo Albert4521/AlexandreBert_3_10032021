@@ -10,7 +10,12 @@
     background-color: #fff;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: flex-start;
     font-size: 1rem;
+    @media screen and (min-width:500px) {
+        height: 22rem;
+    }
+
     &:any-link{
         text-decoration: 0;
         color: black;
@@ -21,47 +26,78 @@
         position: relative;
         width: 100%;
         height: 70%;
-        margin: 0;
+        margin: 0 0 4% 0;
         padding: 0;
         border-top-left-radius: 2rem 2rem;
         border-top-right-radius: 2rem 2rem;
+        @media screen and (min-width:500px) {
+            height: 75%;
+        }
+    
         &__nouveau{
             box-sizing: border-box;
             position: absolute;
             width: 25%;
-            min-width: 4.8rem;
-            height: 16%;
+            min-width: 5.5rem;
+            max-width: 9rem;
+            height: 12%;
+            min-height: 2rem;
+            max-width: 4rem;
             top: 10%;
             right: 4%;
-            padding: 1% 1%;
+            padding: 1.8% 2% 1.5% 2%;
             background-color: hsl(165,56%,74%);
             color: hsl(165,56%,34%);
             font-weight: bold;
             text-align: center;
+            @media screen and (min-width:500px) {
+                height: 12%;
+                padding: 1% 1.5% 1% 1.5%;
+            }
+    
+
         }
         &--1{
             background-image: url(../../public/img/restaurants/LaPaletteDuGout.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
+            @media screen and (min-width:430px) {
+                background-position: top 20%;
+            }
+
         }
         &--2{
             background-image: url(../../public/img/restaurants/LaNoteEnchantee.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: top 55% left 0%;
+            @media screen and (min-width:380px) {
+                background-position: top 60%;
+            }
+            @media screen and (min-width:400px) {
+                background-position: top 90%;
+            }
+            @media screen and (min-width:500px) {
+                background-position: top 90%;
+            }
+
         }
         &--3{
             background-image: url(../../public/img/restaurants/LaFrancaise.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: top 60% left 35%;
+            @media screen and (min-width:400px) {
+                background-position: top 90% left 25%;
+            }
+
         }
         &--4{
             background-image: url(../../public/img/restaurants/LeDeliceDesSens.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: center;
+            background-position: top 80% left 0%;
         }
 
     }
@@ -72,9 +108,16 @@
         flex-flow: row nowrap;
         justify-content: flex-start;
         width: 100%;
-        height: 15%;
+        height: 12.5%;
         padding: 0;
-        margin: 2% 2% 0.6% 4%;
+        margin: 2% 2% 0 5%;
+        font-size: 1.2rem;
+        @media screen and (min-width:500px) {
+            margin: -1% 2% 1% 5%;
+            height: 10%;
+            font-size: 1.4rem;
+        }
+    
         &__texte{
             box-sizing: border-box;
             position: absolute;
@@ -97,7 +140,13 @@
             width: 1.8rem;
             height: 1.8rem;
             padding: 0;
-            margin: 0;  
+            margin: 0;
+            @media screen and (min-width:500px) {
+                width: 2.25rem;
+                height: 2.25rem;
+                left: 80%;
+            }
+      
         }
     }
     &__lieu{
@@ -106,6 +155,12 @@
         width: 100%;
         height: 15%;
         padding: 0;
-        margin: 0.6% 2% 2% 4%;
+        margin: -2% 2% 1% 5%;
+        font-size: 1.1rem;
+        @media screen and (min-width:500px) {
+            height: 12.5%;
+            font-size: 1.3rem;
+        }
+
     }
 }

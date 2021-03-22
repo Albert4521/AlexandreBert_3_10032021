@@ -581,7 +581,16 @@ input:not(:checked) + label:hover > .item__encoche img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-size: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .carte {
+    height: 22rem;
+  }
 }
 
 .carte:-webkit-any-link {
@@ -610,10 +619,16 @@ input:not(:checked) + label:hover > .item__encoche img {
   position: relative;
   width: 100%;
   height: 70%;
-  margin: 0;
+  margin: 0 0 4% 0;
   padding: 0;
   border-top-left-radius: 2rem 2rem;
   border-top-right-radius: 2rem 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .carte__photo {
+    height: 75%;
+  }
 }
 
 .carte__photo__nouveau {
@@ -621,15 +636,25 @@ input:not(:checked) + label:hover > .item__encoche img {
           box-sizing: border-box;
   position: absolute;
   width: 25%;
-  min-width: 4.8rem;
-  height: 16%;
+  min-width: 5.5rem;
+  max-width: 9rem;
+  height: 12%;
+  min-height: 2rem;
+  max-width: 4rem;
   top: 10%;
   right: 4%;
-  padding: 1% 1%;
+  padding: 1.8% 2% 1.5% 2%;
   background-color: #98e2cf;
   color: #26876f;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .carte__photo__nouveau {
+    height: 12%;
+    padding: 1% 1.5% 1% 1.5%;
+  }
 }
 
 .carte__photo--1 {
@@ -639,25 +664,55 @@ input:not(:checked) + label:hover > .item__encoche img {
   background-position: center;
 }
 
+@media screen and (min-width: 430px) {
+  .carte__photo--1 {
+    background-position: top 20%;
+  }
+}
+
 .carte__photo--2 {
   background-image: url(../../public/img/restaurants/LaNoteEnchantee.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top 55% left 0%;
+}
+
+@media screen and (min-width: 380px) {
+  .carte__photo--2 {
+    background-position: top 60%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .carte__photo--2 {
+    background-position: top 90%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .carte__photo--2 {
+    background-position: top 90%;
+  }
 }
 
 .carte__photo--3 {
   background-image: url(../../public/img/restaurants/LaFrancaise.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top 60% left 35%;
+}
+
+@media screen and (min-width: 400px) {
+  .carte__photo--3 {
+    background-position: top 90% left 25%;
+  }
 }
 
 .carte__photo--4 {
   background-image: url(../../public/img/restaurants/LeDeliceDesSens.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top 80% left 0%;
 }
 
 .carte__nom {
@@ -675,9 +730,18 @@ input:not(:checked) + label:hover > .item__encoche img {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 100%;
-  height: 15%;
+  height: 12.5%;
   padding: 0;
-  margin: 2% 2% 0.6% 4%;
+  margin: 2% 2% 0 5%;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .carte__nom {
+    margin: -1% 2% 1% 5%;
+    height: 10%;
+    font-size: 1.4rem;
+  }
 }
 
 .carte__nom__texte {
@@ -708,6 +772,14 @@ input:not(:checked) + label:hover > .item__encoche img {
   margin: 0;
 }
 
+@media screen and (min-width: 500px) {
+  .carte__nom__coeur {
+    width: 2.25rem;
+    height: 2.25rem;
+    left: 80%;
+  }
+}
+
 .carte__lieu {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -715,7 +787,15 @@ input:not(:checked) + label:hover > .item__encoche img {
   width: 100%;
   height: 15%;
   padding: 0;
-  margin: 0.6% 2% 2% 4%;
+  margin: -2% 2% 1% 5%;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .carte__lieu {
+    height: 12.5%;
+    font-size: 1.3rem;
+  }
 }
 
 .fonction__carte {
