@@ -9,7 +9,7 @@
     width: 90%;
     max-width: 35rem;
     height: 5rem;
-    margin: 5% 5% 5% 5%;
+    margin: 6% 5% 6% 5%;
     padding: 0;
     border-radius: 1rem 1rem;
     box-shadow: 0 0 0.8rem rgb(175, 175, 175);
@@ -19,6 +19,12 @@
     @media screen and (min-width:550px) {
         height: 7rem;
     }
+    @media screen and (min-width:1150px) {
+        height: 6rem;
+        width: 22rem;
+        margin: 3rem 1rem;
+    }
+
 
 
     &__num{
@@ -44,7 +50,6 @@
             height: 2.25rem;    
             font-size: 1.2rem;
             padding: 0.35em;
-
         }
         @media screen and (min-width:475px) {
             left: -4.25%;
@@ -61,7 +66,6 @@
             height: 2.5rem;    
             font-size: 1.4rem;
             padding: 0.25em;
-
         }
         @media screen and (min-width:575px) {
             left: -3.7%;
@@ -72,6 +76,10 @@
         @media screen and (min-width:625px) {
             left: -3.3%;
         }
+        @media screen and (min-width:1150px) {
+            left: -5%;
+        }
+
     }
     &__icone{
         box-sizing: border-box;

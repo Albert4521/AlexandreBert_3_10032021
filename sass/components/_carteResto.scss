@@ -4,7 +4,7 @@
     width: 90%;
     max-width: 43rem;
     height: 18rem;
-    margin: 0 5% 3% 5%;
+    margin: 0 5% 8% 5%;
     padding: 0;
     border-radius: 2rem 2rem;
     background-color: #fff;
@@ -15,6 +15,11 @@
     @media screen and (min-width:500px) {
         height: 22rem;
     }
+    @media screen and (min-width:1150px) {
+        margin: 2.5rem auto;
+        width: 32rem;
+    }
+
 
     &:any-link{
         text-decoration: 0;

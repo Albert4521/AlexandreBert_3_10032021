@@ -132,12 +132,9 @@ input[id*=Item]{
         @media screen and (min-width:750px) and (max-width:800px) {
             font-size: 1.5rem;
         }
-
         @media screen and (min-width:800px) {
             font-size: 1.6rem;
         }
-
-    
     }
     &__prix{
         box-sizing: border-box;
