@@ -1,8 +1,3 @@
-@mixin appartionTitresMenu($retard) {
-    transform-origin: bottom center;
-    animation: Deroulement 0.5s linear $retard 1 normal backwards;
-}
-
 @mixin partieMenu($hausse,$couleurMenu){
     position: relative;
     box-sizing: border-box;

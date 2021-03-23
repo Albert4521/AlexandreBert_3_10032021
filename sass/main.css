@@ -600,6 +600,11 @@ input:not(:checked) + label:hover > .item__encoche img {
   }
 }
 
+.carte:hover {
+  -webkit-box-shadow: 0 0 1.5rem #9356dc;
+          box-shadow: 0 0 1.5rem #9356dc;
+}
+
 .carte:-webkit-any-link {
   -webkit-text-decoration: 0;
           text-decoration: 0;
@@ -777,6 +782,8 @@ input:not(:checked) + label:hover > .item__encoche img {
   height: 1.8rem;
   padding: 0;
   margin: 0;
+  -webkit-transition: all ease 500ms;
+  transition: all ease 500ms;
 }
 
 @media screen and (min-width: 500px) {
@@ -785,6 +792,10 @@ input:not(:checked) + label:hover > .item__encoche img {
     height: 2.25rem;
     left: 80%;
   }
+}
+
+.carte__nom__coeur:hover {
+  background-image: url(../../public/img/icones/CoeurPlein.svg);
 }
 
 .carte__lieu {
@@ -1014,10 +1025,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   position: relative;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   min-width: 320px;
-  max-width: 2000px;
-  width: 100%;
   background-color: #ebebeb;
   font-family: 'Roboto';
 }
@@ -1210,11 +1218,6 @@ input:not(:checked) + label:hover > .item__encoche img {
 @media screen and (min-width: 1000px) {
   .Accueil .header__titre2 {
     font-size: 1.5rem;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .Accueil .header__titre2 {
     margin: 0.5% 0 2% 0;
   }
 }
@@ -1481,7 +1484,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   margin: 0;
   padding: 0;
   min-width: 320px;
-  max-width: 1150px;
+  max-width: 1800px;
   width: 100%;
   background-color: #ebebeb;
   font-family: 'Roboto';
@@ -1694,6 +1697,42 @@ input:not(:checked) + label:hover > .item__encoche img {
   }
 }
 
+.menu__header__photo--2 {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  margin-top: 1rem;
+  padding: 0;
+  background-image: url(../../public/img/restaurants/LaNoteEnchantee.jpg);
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu__header__photo--3 {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  margin-top: 1rem;
+  padding: 0;
+  background-image: url(../../public/img/restaurants/LaFrancaise.jpg);
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu__header__photo--4 {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  margin-top: 1rem;
+  padding: 0;
+  background-image: url(../../public/img/restaurants/LeDeliceDesSens.jpg);
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .menu__titre {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1787,6 +1826,8 @@ input:not(:checked) + label:hover > .item__encoche img {
   background-image: url(../../public/img/icones/CoeurVide.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
   width: 1.8rem;
   height: 1.8rem;
   margin-right: 1.7rem;
@@ -1842,6 +1883,10 @@ input:not(:checked) + label:hover > .item__encoche img {
   }
 }
 
+.menu__titre .coeur:hover {
+  background-image: url(../../public/img/icones/CoeurPlein.svg);
+}
+
 .menu__entrees {
   position: relative;
   -webkit-box-sizing: border-box;
@@ -1875,10 +1920,6 @@ input:not(:checked) + label:hover > .item__encoche img {
   padding-top: 0;
   padding-left: 4%;
   text-transform: uppercase;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  -webkit-animation: Deroulement 0.5s linear 0s 1 normal backwards;
-          animation: Deroulement 0.5s linear 0s 1 normal backwards;
 }
 
 @media screen and (min-width: 350px) {
@@ -1950,10 +1991,6 @@ input:not(:checked) + label:hover > .item__encoche img {
   padding-top: 0;
   padding-left: 4%;
   text-transform: uppercase;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  -webkit-animation: Deroulement 0.5s linear 2s 1 normal backwards;
-          animation: Deroulement 0.5s linear 2s 1 normal backwards;
 }
 
 @media screen and (min-width: 350px) {
@@ -2025,10 +2062,6 @@ input:not(:checked) + label:hover > .item__encoche img {
   padding-top: 0;
   padding-left: 4%;
   text-transform: uppercase;
-  -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
-  -webkit-animation: Deroulement 0.5s linear 4s 1 normal backwards;
-          animation: Deroulement 0.5s linear 4s 1 normal backwards;
 }
 
 @media screen and (min-width: 350px) {
@@ -2252,66 +2285,262 @@ input:not(:checked) + label:hover > .item__encoche img {
   }
 }
 
-.item--1 {
+.item--A1 {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
   -webkit-animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
           animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
 }
 
-.item--2 {
+.item--A2 {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
   -webkit-animation: Deroulement 0.5s linear 1s 1 normal backwards;
           animation: Deroulement 0.5s linear 1s 1 normal backwards;
 }
 
-.item--3 {
+.item--A3 {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
   -webkit-animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
           animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
 }
 
-.item--4 {
+.item--A4 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 2s 1 normal backwards;
+          animation: Deroulement 0.5s linear 2s 1 normal backwards;
+}
+
+.item--A5 {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
   -webkit-animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
           animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
 }
 
-.item--5 {
+.item--A6 {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
   -webkit-animation: Deroulement 0.5s linear 3s 1 normal backwards;
           animation: Deroulement 0.5s linear 3s 1 normal backwards;
 }
 
-.item--6 {
+.item--A7 {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
   -webkit-animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
           animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
 }
 
-.item--7 {
+.item--A8 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 4s 1 normal backwards;
+          animation: Deroulement 0.5s linear 4s 1 normal backwards;
+}
+
+.item--A9 {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
   -webkit-animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
           animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
 }
 
-.item--8 {
+.item--B1 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+}
+
+.item--B2 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 1s 1 normal backwards;
+          animation: Deroulement 0.5s linear 1s 1 normal backwards;
+}
+
+.item--B3 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+}
+
+.item--B4 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 2s 1 normal backwards;
+          animation: Deroulement 0.5s linear 2s 1 normal backwards;
+}
+
+.item--B5 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+}
+
+.item--B6 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 3s 1 normal backwards;
+          animation: Deroulement 0.5s linear 3s 1 normal backwards;
+}
+
+.item--B7 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+}
+
+.item--B8 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 4s 1 normal backwards;
+          animation: Deroulement 0.5s linear 4s 1 normal backwards;
+}
+
+.item--B9 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
+}
+
+.item--B10 {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
   -webkit-animation: Deroulement 0.5s linear 5s 1 normal backwards;
           animation: Deroulement 0.5s linear 5s 1 normal backwards;
 }
 
-.item--9 {
+.item--C1 {
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
-  -webkit-animation: Deroulement 0.5s linear 5.5s 1 normal backwards;
-          animation: Deroulement 0.5s linear 5.5s 1 normal backwards;
+  -webkit-animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+}
+
+.item--C2 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 1s 1 normal backwards;
+          animation: Deroulement 0.5s linear 1s 1 normal backwards;
+}
+
+.item--C3 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+}
+
+.item--C4 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 2s 1 normal backwards;
+          animation: Deroulement 0.5s linear 2s 1 normal backwards;
+}
+
+.item--C5 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+}
+
+.item--C6 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 3s 1 normal backwards;
+          animation: Deroulement 0.5s linear 3s 1 normal backwards;
+}
+
+.item--C7 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+}
+
+.item--C8 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 4s 1 normal backwards;
+          animation: Deroulement 0.5s linear 4s 1 normal backwards;
+}
+
+.item--C9 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
+}
+
+.item--D1 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+}
+
+.item--D2 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 1s 1 normal backwards;
+          animation: Deroulement 0.5s linear 1s 1 normal backwards;
+}
+
+.item--D3 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+}
+
+.item--D4 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 2s 1 normal backwards;
+          animation: Deroulement 0.5s linear 2s 1 normal backwards;
+}
+
+.item--D5 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+}
+
+.item--D6 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 3s 1 normal backwards;
+          animation: Deroulement 0.5s linear 3s 1 normal backwards;
+}
+
+.item--D7 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+}
+
+.item--D8 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 4s 1 normal backwards;
+          animation: Deroulement 0.5s linear 4s 1 normal backwards;
+}
+
+.item--D9 {
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  -webkit-animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
+          animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
 }
 /*# sourceMappingURL=main.css.map */

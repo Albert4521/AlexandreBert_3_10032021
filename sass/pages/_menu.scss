@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     min-width: 320px;
-    max-width: 1150px;
+    max-width: 1800px;
     width: 100%;
     background-color: rgb(235, 235, 235);
     font-family: 'Roboto';
@@ -137,8 +137,43 @@
                 }
                 @media screen and (min-width:1000px) {
                     background-position: left 0% top 62%;
-                }        
+                }
             }
+            &--2{
+                position: relative;
+                width: 100%;
+                height: 15rem;
+                margin-top: 1rem;
+                padding: 0;    
+                background-image: url(../../public/img/restaurants/LaNoteEnchantee.jpg);
+                background-clip: border-box;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &--3{
+                position: relative;
+                width: 100%;
+                height: 15rem;
+                margin-top: 1rem;
+                padding: 0;    
+                background-image: url(../../public/img/restaurants/LaFrancaise.jpg);
+                background-clip: border-box;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &--4{
+                position: relative;
+                width: 100%;
+                height: 15rem;
+                margin-top: 1rem;
+                padding: 0;    
+                background-image: url(../../public/img/restaurants/LeDeliceDesSens.jpg);
+                background-clip: border-box;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+
         }
     }
     &__titre{
@@ -165,28 +200,30 @@
             background-image: url(../../public/img/icones/CoeurVide.svg);
             background-repeat: no-repeat;
             background-size: cover;
+            transition: all ease 1s;
             @include tailleCoeur;
+            &:hover{
+                background-image: url(../../public/img/icones/CoeurPlein.svg);
+            }
+
         }
     }
     &__entrees{
         @include partieMenu(-3.8rem,rgb(235, 235, 235));
         h3{
             @include styleTitreSecondaire;
-            @include appartionTitresMenu(0s);
         }
     }
     &__plats{
         @include partieMenu(-3.8rem,rgb(235, 235, 235));
         h3{
             @include styleTitreSecondaire;
-            @include appartionTitresMenu(2s);
         }    
     }
     &__desserts{
         @include partieMenu(-3.8rem,rgb(235, 235, 235));
         h3{
             @include styleTitreSecondaire;
-            @include appartionTitresMenu(4s);
         }
     }
     &__commande{
@@ -296,40 +333,152 @@
     }
 }
 .item{
-    &--1{
+    &--A1{
         transform-origin: bottom center;
         animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
     }
-    &--2{
+    &--A2{
         transform-origin: bottom center;
         animation: Deroulement 0.5s linear 1s 1 normal backwards;
     }
-    &--3{
+    &--A3{
         transform-origin: bottom center;
         animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
     }
-    &--4{
+    &--A4{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 2s 1 normal backwards;
+    }
+    &--A5{
         transform-origin: bottom center;
         animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
     }
-    &--5{
+    &--A6{
         transform-origin: bottom center;
         animation: Deroulement 0.5s linear 3s 1 normal backwards;
     }
-    &--6{
+    &--A7{
         transform-origin: bottom center;
         animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
     }
-    &--7{
+    &--A8{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 4s 1 normal backwards;
+    }
+    &--A9{
         transform-origin: bottom center;
         animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
     }
-    &--8{
+    &--B1{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+    }
+    &--B2{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 1s 1 normal backwards;
+    }
+    &--B3{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+    }
+    &--B4{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 2s 1 normal backwards;
+    }
+    &--B5{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+    }
+    &--B6{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 3s 1 normal backwards;
+    }
+    &--B7{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+    }
+    &--B8{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 4s 1 normal backwards;
+    }
+    &--B9{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
+    }
+    &--B10{
         transform-origin: bottom center;
         animation: Deroulement 0.5s linear 5s 1 normal backwards;
     }
-    &--9{
+    &--C1{
         transform-origin: bottom center;
-        animation: Deroulement 0.5s linear 5.5s 1 normal backwards;
+        animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+    }
+    &--C2{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 1s 1 normal backwards;
+    }
+    &--C3{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+    }
+    &--C4{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 2s 1 normal backwards;
+    }
+    &--C5{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+    }
+    &--C6{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 3s 1 normal backwards;
+    }
+    &--C7{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+    }
+    &--C8{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 4s 1 normal backwards;
+    }
+    &--C9{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
+    }
+    &--D1{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 0.5s 1 normal backwards;
+    }
+    &--D2{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 1s 1 normal backwards;
+    }
+    &--D3{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 1.5s 1 normal backwards;
+    }
+    &--D4{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 2s 1 normal backwards;
+    }
+    &--D5{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 2.5s 1 normal backwards;
+    }
+    &--D6{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 3s 1 normal backwards;
+    }
+    &--D7{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 3.5s 1 normal backwards;
+    }
+    &--D8{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 4s 1 normal backwards;
+    }
+    &--D9{
+        transform-origin: bottom center;
+        animation: Deroulement 0.5s linear 4.5s 1 normal backwards;
     }
 }
