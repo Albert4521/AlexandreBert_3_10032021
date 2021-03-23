@@ -138,6 +138,10 @@
                 @media screen and (min-width:1000px) {
                     background-position: left 0% top 62%;
                 }
+                @media screen and (min-width:1150px) {
+                    background-position: left 0% top 62%;
+                }
+
             }
             &--2{
                 position: relative;
@@ -192,6 +196,12 @@
         border-top-right-radius: 2rem;
         @media screen and (min-width:750px) {
             top: -2rem;
+        }
+        @media screen and (min-width:1150px) {
+            padding: 5% 0;
+            top: -1rem;
+
+
         }
         h2{
            @include styleTitrePrincipal;
