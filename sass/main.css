@@ -1630,8 +1630,9 @@ input:not(:checked) + label:hover > .item__encoche img {
   .menu__header__logo {
     font-size: 3.25rem;
     margin: 0 10% 0 5%;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     padding-top: 0;
+    height: 2rem;
   }
 }
 
@@ -1701,16 +1702,93 @@ input:not(:checked) + label:hover > .item__encoche img {
   }
 }
 
+@media screen and (min-width: 1300px) {
+  .menu__header__photo--1 {
+    background-position: left 0% top 60%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .menu__header__photo--1 {
+    background-position: left 0% top 58%;
+  }
+}
+
 .menu__header__photo--2 {
   position: relative;
   width: 100%;
-  height: 15rem;
+  height: 17rem;
   margin-top: 1rem;
   padding: 0;
   background-image: url(../../public/img/restaurants/LaNoteEnchantee.jpg);
   background-clip: border-box;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 400px) {
+  .menu__header__photo--2 {
+    background-position: left 0% top 43%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .menu__header__photo--2 {
+    background-position: left 0% top 48%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .menu__header__photo--2 {
+    background-position: left 0% top 64%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu__header__photo--2 {
+    background-position: left 0% top 64%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu__header__photo--2 {
+    background-position: left 0% top 62%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .menu__header__photo--2 {
+    height: 17rem;
+    background-position: left 0% top 61%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .menu__header__photo--2 {
+    height: 17rem;
+    background-position: left 0% top 59%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu__header__photo--2 {
+    height: 19rem;
+    background-position: left 0% top 59%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu__header__photo--2 {
+    height: 20rem;
+    background-position: left 0% top 58%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .menu__header__photo--2 {
+    height: 20rem;
+    background-position: left 0% top 57%;
+  }
 }
 
 .menu__header__photo--3 {
