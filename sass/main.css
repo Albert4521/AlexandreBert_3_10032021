@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Roboto';
-  src: url("../../public/fonts/Roboto-Regular.ttf") format("truetype");
+  src: url("../public/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Shrikhand';
-  src: url("../../public/fonts/Shrikhand-Regular.ttf") format("truetype");
+  src: url("../public/fonts/Shrikhand-Regular.ttf") format("truetype");
 }
 
 @-webkit-keyframes Rotation {
@@ -993,19 +993,19 @@ input:not(:checked) + label:hover > .item__encoche img {
 }
 
 .fonction__carte__icone--1 {
-  background-image: url(../../public/img/icones/Smartphone.svg);
+  background-image: url("../public/img/icones/Smartphone.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .fonction__carte__icone--2 {
-  background-image: url(../../public/img/icones/Liste.svg);
+  background-image: url("../public/img/icones/Liste.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .fonction__carte__icone--3 {
-  background-image: url(../../public/img/icones/Store.svg);
+  background-image: url("../public/img/icones/Store.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1172,7 +1172,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   width: 2rem;
   height: 2rem;
   margin: auto 0.25rem auto 0;
-  background-image: url(../../public/img/icones/Localisation.svg);
+  background-image: url("../public/img/icones/Localisation.svg");
   background-color: #afafaf;
   background-position: center;
   background-repeat: no-repeat;
