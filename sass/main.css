@@ -1441,7 +1441,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  background: url("../../public/img/icones/Couverts.svg");
+  background: url("../public/img/icones/Couverts.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   margin-right: 0.7rem;
@@ -1461,7 +1461,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   height: 1rem;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  background: url("../../public/img/icones/PoigneeMain.svg");
+  background: url("../public/img/icones/PoigneeMain.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom 50%;
@@ -1639,7 +1639,7 @@ input:not(:checked) + label:hover > .item__encoche img {
 .menu__header__photo--1 {
   position: relative;
   width: 100%;
-  height: 15rem;
+  height: 16rem;
   margin-top: 1rem;
   padding: 0;
   background-image: url(../../public/img/restaurants/LaPaletteDuGout.jpg);
@@ -1710,7 +1710,7 @@ input:not(:checked) + label:hover > .item__encoche img {
 
 @media screen and (min-width: 1400px) {
   .menu__header__photo--1 {
-    background-position: left 0% top 58%;
+    background-position: left 0% top 57%;
   }
 }
 
@@ -1758,14 +1758,12 @@ input:not(:checked) + label:hover > .item__encoche img {
 
 @media screen and (min-width: 750px) {
   .menu__header__photo--2 {
-    height: 17rem;
     background-position: left 0% top 61%;
   }
 }
 
 @media screen and (min-width: 800px) {
   .menu__header__photo--2 {
-    height: 17rem;
     background-position: left 0% top 59%;
   }
 }
@@ -1786,7 +1784,6 @@ input:not(:checked) + label:hover > .item__encoche img {
 
 @media screen and (min-width: 1300px) {
   .menu__header__photo--2 {
-    height: 20rem;
     background-position: left 0% top 57%;
   }
 }
@@ -1794,7 +1791,7 @@ input:not(:checked) + label:hover > .item__encoche img {
 .menu__header__photo--3 {
   position: relative;
   width: 100%;
-  height: 15rem;
+  height: 16rem;
   margin-top: 1rem;
   padding: 0;
   background-image: url(../../public/img/restaurants/LaFrancaise.jpg);
@@ -1803,16 +1800,139 @@ input:not(:checked) + label:hover > .item__encoche img {
   background-size: cover;
 }
 
+@media screen and (max-width: 400px) {
+  .menu__header__photo--3 {
+    background-position: left 0% top 48%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .menu__header__photo--3 {
+    background-position: left 0% top 60%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .menu__header__photo--3 {
+    background-position: left 0% top 70%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu__header__photo--3 {
+    background-position: left 0% top 75%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu__header__photo--3 {
+    height: 17rem;
+    background-position: left 0% top 78%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .menu__header__photo--3 {
+    height: 18rem;
+    background-position: left 0% top 75%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu__header__photo--3 {
+    height: 18rem;
+    background-position: left 0% top 72%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu__header__photo--3 {
+    height: 18rem;
+    background-position: left 0% top 69%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .menu__header__photo--3 {
+    height: 18rem;
+    background-position: left 0% top 65%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__header__photo--3 {
+    height: 18rem;
+    background-position: left 0% top 62%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .menu__header__photo--3 {
+    height: 18rem;
+    background-position: left 0% top 59%;
+  }
+}
+
 .menu__header__photo--4 {
   position: relative;
   width: 100%;
-  height: 15rem;
+  height: 17rem;
   margin-top: 1rem;
   padding: 0;
   background-image: url(../../public/img/restaurants/LeDeliceDesSens.jpg);
   background-clip: border-box;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 400px) {
+  .menu__header__photo--4 {
+    background-position: left 0% top 45%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .menu__header__photo--4 {
+    background-position: left 0% top 50%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .menu__header__photo--4 {
+    background-position: left 0% top 60%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .menu__header__photo--4 {
+    background-position: left 0% top 70%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .menu__header__photo--4 {
+    background-position: left 0% top 80%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .menu__header__photo--4 {
+    background-position: left 0% top 75%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu__header__photo--4 {
+    height: 18rem;
+    background-position: left 20% top 70%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .menu__header__photo--4 {
+    height: 19rem;
+    background-position: left 50% top 70%;
+  }
 }
 
 .menu__titre {
@@ -2340,7 +2460,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  background: url("../../public/img/icones/Couverts.svg");
+  background: url("../public/img/icones/Couverts.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   margin-right: 0.7rem;
@@ -2360,7 +2480,7 @@ input:not(:checked) + label:hover > .item__encoche img {
   height: 1rem;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  background: url("../../public/img/icones/PoigneeMain.svg");
+  background: url("../public/img/icones/PoigneeMain.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom 50%;

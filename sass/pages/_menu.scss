@@ -108,7 +108,7 @@
             &--1{
                 position: relative;
                 width: 100%;
-                height: 15rem;
+                height: 16rem;
                 margin-top: 1rem;
                 padding: 0;    
                 background-image: url(../../public/img/restaurants/LaPaletteDuGout.jpg);
@@ -146,9 +146,8 @@
                     background-position: left 0% top 60%;
                 }
                 @media screen and (min-width:1400px) {
-                    background-position: left 0% top 58%;
+                    background-position: left 0% top 57%;
                 }
-
 
             }
             &--2{
@@ -177,11 +176,9 @@
                     background-position: left 0% top 62%;
                 }
                 @media screen and (min-width:750px) {
-                    height: 17rem;
                     background-position: left 0% top 61%;
                 }
                 @media screen and (min-width:800px) {
-                    height: 17rem;
                     background-position: left 0% top 59%;
                 }
                 @media screen and (min-width:900px) {
@@ -193,7 +190,6 @@
                     background-position: left 0% top 58%;
                 }
                 @media screen and (min-width:1300px) {
-                    height: 20rem;
                     background-position: left 0% top 57%;
                 }
 
@@ -201,24 +197,91 @@
             &--3{
                 position: relative;
                 width: 100%;
-                height: 15rem;
+                height: 16rem;
                 margin-top: 1rem;
                 padding: 0;    
                 background-image: url(../../public/img/restaurants/LaFrancaise.jpg);
                 background-clip: border-box;
                 background-repeat: no-repeat;
                 background-size: cover;
+                @media screen and (max-width:400px) {
+                    background-position: left 0% top 48%;
+                }
+                @media screen and (min-width:400px) {
+                    background-position: left 0% top 60%;
+                }
+                @media screen and (min-width:500px) {
+                    background-position: left 0% top 70%;
+                }
+                @media screen and (min-width:600px) {
+                    background-position: left 0% top 75%;
+                }
+                @media screen and (min-width:700px) {
+                    height: 17rem;
+                    background-position: left 0% top 78%;
+                }
+                @media screen and (min-width:800px) {
+                    height: 18rem;
+                    background-position: left 0% top 75%;
+                }
+                @media screen and (min-width:900px) {
+                    height: 18rem;
+                    background-position: left 0% top 72%;
+                }
+                @media screen and (min-width:900px) {
+                    height: 18rem;
+                    background-position: left 0% top 69%;
+                }
+                @media screen and (min-width:1100px) {
+                    height: 18rem;
+                    background-position: left 0% top 65%;
+                }
+                @media screen and (min-width:1200px) {
+                    height: 18rem;
+                    background-position: left 0% top 62%;
+                }
+                @media screen and (min-width:1300px) {
+                    height: 18rem;
+                    background-position: left 0% top 59%;
+                }
             }
             &--4{
                 position: relative;
                 width: 100%;
-                height: 15rem;
+                height: 17rem;
                 margin-top: 1rem;
                 padding: 0;    
                 background-image: url(../../public/img/restaurants/LeDeliceDesSens.jpg);
                 background-clip: border-box;
                 background-repeat: no-repeat;
                 background-size: cover;
+                @media screen and (max-width:400px) {
+                    background-position: left 0% top 45%;
+                }
+                @media screen and (min-width:400px) {
+                    background-position: left 0% top 50%;
+                }
+                @media screen and (min-width:500px) {
+                    background-position: left 0% top 60%;
+                }
+                @media screen and (min-width:600px) {
+                    background-position: left 0% top 70%;
+                }
+                @media screen and (min-width:700px) {
+                    background-position: left 0% top 80%;
+                }
+                @media screen and (min-width:850px) {
+                    background-position: left 0% top 75%;
+                }
+                @media screen and (min-width:1000px) {
+                    height: 18rem;
+                    background-position: left 20% top 70%;
+                }
+                @media screen and (min-width:1300px) {
+                    height: 19rem;
+                    background-position: left 50% top 70%;
+                }
+
             }
 
 
@@ -360,7 +423,7 @@
                             width: 1.2rem;
                             height: 1.2rem;
                         }        
-                        background: url('../../public/img/icones/Couverts.svg');
+                        background: url('../public/img/icones/Couverts.svg');
                         background-repeat: no-repeat;
                         background-size: 100%;
                         margin-right: 0.7rem;
@@ -375,7 +438,7 @@
                             height: 1.2rem;
                         }        
                         transform: rotate(-45deg);
-                        background: url('../../public/img/icones/PoigneeMain.svg');
+                        background: url('../public/img/icones/PoigneeMain.svg');
                         background-repeat: no-repeat;
                         background-size: 100%;
                         background-position: bottom 50%;
