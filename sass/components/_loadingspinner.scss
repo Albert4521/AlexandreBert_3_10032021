@@ -1,0 +1,15 @@
+
+
+.loadingspinner{
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 100;
+    top: 25%;
+    left: 40%;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50% 50% ;
+    background: linear-gradient(90deg,#9356DC,#FF79DA,#99E2D0)
+    opacity(1);
+    //animation: Chargement 500ms linear 0s 6 normal;
+}

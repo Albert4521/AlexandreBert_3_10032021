@@ -283,9 +283,13 @@
                         background-position: bottom 50%;
                         margin-right: 0.7rem;
                     }
+                    a:any-link{
+                        color: white;
+                        text-decoration: none;
+                        font-weight: normal;
+                    }        
                 }
             }
         } 
     }
-
 }
