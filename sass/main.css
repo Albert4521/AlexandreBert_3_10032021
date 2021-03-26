@@ -1369,9 +1369,9 @@ input:not(:checked) + label:hover > .item__encoche img {
   visibility: hidden;
   z-index: 100;
   top: 25%;
-  left: 40%;
-  width: 20rem;
-  height: 20rem;
+  left: 45%;
+  width: 15%;
+  height: 15%;
   border-radius: 50% 50%;
   background: -webkit-gradient(linear, left top, right top, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
   background: linear-gradient(90deg, #9356DC, #FF79DA, #99E2D0);
