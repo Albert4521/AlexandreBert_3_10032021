@@ -456,6 +456,9 @@ input[id*=Item] {
   font-family: 'Roboto';
   -webkit-transition: all ease 2s;
   transition: all ease 2s;
+  /*input:not(:checked)+div:hover>&__encoche img{
+        animation: Rotation 0.6s linear 0s 1 normal;
+    }*/
 }
 
 @media screen and (max-width: 400px) {
@@ -845,28 +848,28 @@ input[id*=Item] {
   }
 }
 
-.item:hover > .item__principal, input:checked + label > .item__principal {
+.item:hover > .item__principal, input:checked + div > .item__principal {
   border-top-right-radius: 0;
   width: 80%;
 }
 
-.item:hover > .item__secondaire, input:checked + label > .item__secondaire {
+.item:hover > .item__secondaire, input:checked + div > .item__secondaire {
   width: 60%;
 }
 
-.item:hover > .item__prix, input:checked + label > .item__prix {
+.item:hover > .item__prix, input:checked + div > .item__prix {
   border-bottom-right-radius: 0;
   left: 60%;
   padding: 2.0% 5% 0 5%;
 }
 
-.item:hover > .item__encoche, input:checked + label > .item__encoche {
+.item:hover > .item__encoche, input:checked + div > .item__encoche {
   padding: 5%;
   left: 80%;
   width: 20%;
 }
 
-input:not(:checked) + label:hover > .item__encoche img {
+.item:hover > .item__encoche img {
   -webkit-animation: Rotation 0.6s linear 0s 1 normal;
           animation: Rotation 0.6s linear 0s 1 normal;
 }
