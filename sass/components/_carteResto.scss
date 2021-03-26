@@ -24,7 +24,7 @@
     }
 
     &:any-link{
-        text-decoration: 0;
+        text-decoration: none;
         color: black;
         font-weight: normal;
     }
@@ -40,7 +40,6 @@
         @media screen and (min-width:500px) {
             height: 75%;
         }
-    
         &__nouveau{
             box-sizing: border-box;
             position: absolute;
@@ -68,7 +67,13 @@
             background-size: cover;
             background-position: center;
             @media screen and (min-width:430px) {
-                background-position: top 20%;
+                background-position: top 20% left 0%;
+            }
+            @media screen and (min-width:600px) {
+                background-position: top 30% left 0%;
+            }
+            @media screen and (min-width:700px) {
+                background-position: top 40% left 0%;
             }
 
         }
@@ -78,13 +83,13 @@
             background-size: cover;
             background-position: top 55% left 0%;
             @media screen and (min-width:380px) {
-                background-position: top 60%;
+                background-position: top 60% left 0%;
             }
             @media screen and (min-width:400px) {
-                background-position: top 90%;
+                background-position: top 62% left 0%;
             }
             @media screen and (min-width:500px) {
-                background-position: top 90%;
+                background-position: top 58% left 0%;
             }
 
         }

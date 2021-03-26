@@ -914,21 +914,19 @@ input:not(:checked) + label:hover > .item__encoche img {
 }
 
 .carte:-webkit-any-link {
-  -webkit-text-decoration: 0;
-          text-decoration: 0;
+  text-decoration: none;
   color: black;
   font-weight: normal;
 }
 
 .carte:-moz-any-link {
-  text-decoration: 0;
+  text-decoration: none;
   color: black;
   font-weight: normal;
 }
 
 .carte:any-link {
-  -webkit-text-decoration: 0;
-          text-decoration: 0;
+  text-decoration: none;
   color: black;
   font-weight: normal;
 }
@@ -986,7 +984,19 @@ input:not(:checked) + label:hover > .item__encoche img {
 
 @media screen and (min-width: 430px) {
   .carte__photo--1 {
-    background-position: top 20%;
+    background-position: top 20% left 0%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .carte__photo--1 {
+    background-position: top 30% left 0%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .carte__photo--1 {
+    background-position: top 40% left 0%;
   }
 }
 
@@ -999,19 +1009,19 @@ input:not(:checked) + label:hover > .item__encoche img {
 
 @media screen and (min-width: 380px) {
   .carte__photo--2 {
-    background-position: top 60%;
+    background-position: top 60% left 0%;
   }
 }
 
 @media screen and (min-width: 400px) {
   .carte__photo--2 {
-    background-position: top 90%;
+    background-position: top 62% left 0%;
   }
 }
 
 @media screen and (min-width: 500px) {
   .carte__photo--2 {
-    background-position: top 90%;
+    background-position: top 58% left 0%;
   }
 }
 
