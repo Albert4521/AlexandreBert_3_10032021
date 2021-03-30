@@ -1,6 +1,8 @@
+//On n'affiche pas la case à cocher matérialisant l'input checkbox
 input[id*=Item]{
     display: none;
 }
+//Style général de la carte d'un plat (sans action utilisateur)
 .item{
     display: block;
     position: relative;
@@ -273,24 +275,68 @@ input[id*=Item]{
             }
         }
     }
-//Effet au survol de la carte
-    &:hover>&__principal{
+//Effets au clic de la carte pour versions mobile et tablette (1366px max.)
+    &:active>&__principal{
+        @media screen and (max-width:1366px){
         border-top-right-radius: 0;
         width: 80%;
+        }
     }
-    &:hover>&__secondaire{
+    &:active>&__secondaire{
+        @media screen and (max-width:1366px){
         width: 60%;
+        }
     }
-    &:hover>&__prix{
+    &:active>&__prix{
+        @media screen and (max-width:1366px){
         border-bottom-right-radius: 0;
         left: 60%;
-        padding: 2.0% 5% 0 5%;   
+        padding: 2.0% 5% 0 5%;
+        }   
     }
-    &:hover>&__encoche{
+    &:active>&__encoche{
+        @media screen and (max-width:1366px){
         padding: 5%;
         left: 80%;
         width: 20%;
+        }
     }
+    &:active>input:not(:checked)~.item__encoche img{
+        @media screen and (max-width:1366px){
+        animation: Rotation 500ms linear 0s 1 normal;
+        }
+    }   
+//Effets au survol de la carte pour version desktop 1366px min.
+    &:hover>&__principal{
+        @media screen and (min-width:1366px){
+        border-top-right-radius: 0;
+        width: 80%;
+        }
+    }
+    &:hover>&__secondaire{
+        @media screen and (min-width:1366px){
+        width: 60%;
+        }
+    }
+    &:hover>&__prix{
+        @media screen and (min-width:1366px){
+        border-bottom-right-radius: 0;
+        left: 60%;
+        padding: 2.0% 5% 0 5%; 
+        }  
+    }
+    &:hover>&__encoche{
+        @media screen and (min-width:1366px){
+        padding: 5%;
+        left: 80%;
+        width: 20%;
+        }
+    }
+    &:hover>input:not(:checked)~.item__encoche img{
+        @media screen and (min-width:1366px){
+        animation: Rotation 600ms linear 0s 1 normal;
+        }
+    }   
 }
 //Effet lorsque la carte est cochée
 input:checked ~ .item__principal{
@@ -309,8 +355,4 @@ input:checked ~ .item__encoche{
     padding: 5%;
     left: 80%;
     width: 20%;
-}
-//Déclenchement de l'animation Rotation Encoche
-.item:hover > input:not(:checked) ~ .item__encoche img{
-    animation: Rotation 0.6s linear 0s 1 normal;
 }
