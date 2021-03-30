@@ -3,13 +3,11 @@
     box-sizing: border-box;
     width: 100%;
     margin: 0;
-    padding: 0;
     top: $hausse;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0 auto;
     background-color: $couleurMenu;
 }
 @mixin styleTitrePrincipal{
@@ -48,8 +46,6 @@
         font-size: 3.8rem;
         padding: 0 0 0 2rem;
     }    
-    
-    
 }
 @mixin tailleCoeur{
     width: 1.8rem;

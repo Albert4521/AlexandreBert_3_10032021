@@ -550,6 +550,48 @@ input[id*=Item] {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .item {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .item {
+    margin-left: 11rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .item {
+    margin-left: 15rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item {
+    margin-left: 19rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .item {
+    margin-left: 22rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .item {
+    margin-left: 25rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .item {
+    margin-left: 28rem;
+  }
+}
+
 .item label {
   position: absolute;
   display: inline-block;
@@ -1471,9 +1513,9 @@ input:checked ~ .item__encoche {
   visibility: hidden;
   z-index: 2;
   top: 35%;
-  left: 45%;
-  width: 15%;
-  height: 15%;
+  left: 40%;
+  width: 25%;
+  height: 25%;
   border-radius: 50% 50%;
   background: -webkit-gradient(linear, left top, right top, from(#9356DC), color-stop(#FF79DA), to(#99E2D0));
   background: linear-gradient(90deg, #9356DC, #FF79DA, #99E2D0);
@@ -1843,7 +1885,6 @@ input:checked ~ .item__encoche {
           box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1858,7 +1899,6 @@ input:checked ~ .item__encoche {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 auto;
   background-color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1926,7 +1966,7 @@ input:checked ~ .item__encoche {
   background: url("../public/img/icones/PoigneeMain.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: bottom 50%;
+  background-position: bottom 50% left 0%;
   margin-right: 0.7rem;
 }
 
@@ -1969,21 +2009,21 @@ input:checked ~ .item__encoche {
 }
 
 .menu .souligne {
-  -webkit-text-decoration: underline 4px solid #99E2D0;
-          text-decoration: underline 4px solid #99E2D0;
+  -webkit-text-decoration: underline solid #99E2D0;
+          text-decoration: underline solid #99E2D0;
 }
 
 @media screen and (min-width: 550px) {
   .menu .souligne {
-    -webkit-text-decoration: underline 6px solid #99E2D0;
-            text-decoration: underline 6px solid #99E2D0;
+    -webkit-text-decoration: underline solid #99E2D0;
+            text-decoration: underline solid #99E2D0;
   }
 }
 
 @media screen and (min-width: 800px) {
   .menu .souligne {
-    -webkit-text-decoration: underline 8px solid #99E2D0;
-            text-decoration: underline 8px solid #99E2D0;
+    -webkit-text-decoration: underline solid #99E2D0;
+            text-decoration: underline solid #99E2D0;
   }
 }
 
@@ -2017,7 +2057,7 @@ input:checked ~ .item__encoche {
   background-image: url("../public/img/icones/FlecheGauche.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top 50%;
+  background-position: top 50% left 0%;
 }
 
 @media screen and (min-width: 400px) {
@@ -2158,7 +2198,7 @@ input:checked ~ .item__encoche {
   }
 }
 
-@media screen and (max-width: 900) {
+@media screen and (max-width: 900px) {
   .menu__header__photo--1 {
     background-position: left 0% top 25%;
   }
@@ -2620,7 +2660,6 @@ input:checked ~ .item__encoche {
           box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0;
   top: -3.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2635,7 +2674,6 @@ input:checked ~ .item__encoche {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 auto;
   background-color: #ebebeb;
 }
 
@@ -2691,7 +2729,6 @@ input:checked ~ .item__encoche {
           box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0;
   top: -3.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2706,7 +2743,6 @@ input:checked ~ .item__encoche {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 auto;
   background-color: #ebebeb;
 }
 
@@ -2762,7 +2798,6 @@ input:checked ~ .item__encoche {
           box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0;
   top: -3.8rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2777,7 +2812,6 @@ input:checked ~ .item__encoche {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 auto;
   background-color: #ebebeb;
 }
 
@@ -2833,7 +2867,6 @@ input:checked ~ .item__encoche {
           box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0;
   top: -2.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2848,7 +2881,6 @@ input:checked ~ .item__encoche {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 auto;
   background-color: #ebebeb;
 }
 
@@ -2901,7 +2933,7 @@ input:checked ~ .item__encoche {
 @media screen and (min-width: 1100px) {
   .menu__commande .bouton {
     width: 38%;
-    margin: auto 31%;
+    margin: auto 32%;
   }
 }
 
@@ -2918,7 +2950,6 @@ input:checked ~ .item__encoche {
           box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 0;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2933,7 +2964,6 @@ input:checked ~ .item__encoche {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 auto;
   background-color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -3001,7 +3031,7 @@ input:checked ~ .item__encoche {
   background: url("../public/img/icones/PoigneeMain.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: bottom 50%;
+  background-position: bottom 50% left 0%;
   margin-right: 0.7rem;
 }
 
@@ -3010,6 +3040,24 @@ input:checked ~ .item__encoche {
     width: 1.2rem;
     height: 1.2rem;
   }
+}
+
+.menu__footer__navigation ul li a:-webkit-any-link {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.menu__footer__navigation ul li a:-moz-any-link {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.menu__footer__navigation ul li a:any-link {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
 }
 
 .item--A1 {
