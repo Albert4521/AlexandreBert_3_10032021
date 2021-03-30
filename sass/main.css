@@ -124,6 +124,42 @@
   }
 }
 
+@-webkit-keyframes PopUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    z-index: 1;
+  }
+  99% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    z-index: 0;
+  }
+}
+
+@keyframes PopUp {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    z-index: 1;
+  }
+  99% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    z-index: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    z-index: 0;
+  }
+}
+
 @-webkit-keyframes Chargement {
   0% {
     visibility: visible;
@@ -521,7 +557,7 @@ input[id*=Item] {
           box-sizing: border-box;
   width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 1;
 }
 
 .item__principal {
@@ -1410,14 +1446,31 @@ input:checked ~ .item__encoche {
   }
 }
 
+.conteneurPopUp {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-animation: PopUp 3s linear 0s 1 normal backwards;
+          animation: PopUp 3s linear 0s 1 normal backwards;
+}
+
 .loadingspinner {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: fixed;
   display: block;
   visibility: hidden;
-  z-index: 100;
-  top: 25%;
+  z-index: 2;
+  top: 35%;
   left: 45%;
   width: 15%;
   height: 15%;

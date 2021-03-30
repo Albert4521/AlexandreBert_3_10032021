@@ -22,7 +22,6 @@
     &:hover{
         box-shadow: 0 0 1.5rem #9356dc;
     }
-
     &:any-link{
         text-decoration: none;
         color: black;
@@ -75,7 +74,6 @@
             @media screen and (min-width:700px) {
                 background-position: top 40% left 0%;
             }
-
         }
         &--2{
             background-image: url(../public/img/restaurants/LaNoteEnchantee.jpg);
@@ -91,7 +89,6 @@
             @media screen and (min-width:500px) {
                 background-position: top 58% left 0%;
             }
-
         }
         &--3{
             background-image: url(../public/img/restaurants/LaFrancaise.jpg);
@@ -101,7 +98,6 @@
             @media screen and (min-width:400px) {
                 background-position: top 90% left 25%;
             }
-
         }
         &--4{
             background-image: url(../public/img/restaurants/LeDeliceDesSens.jpg);
@@ -109,7 +105,6 @@
             background-size: cover;
             background-position: top 80% left 0%;
         }
-
     }
     &__nom{
         box-sizing: border-box;
@@ -127,7 +122,6 @@
             height: 10%;
             font-size: 1.4rem;
         }
-    
         &__texte{
             box-sizing: border-box;
             position: absolute;
@@ -204,6 +198,5 @@
             height: 12.5%;
             font-size: 1.3rem;
         }
-
     }
 }

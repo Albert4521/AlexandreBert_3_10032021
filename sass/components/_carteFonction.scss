@@ -24,9 +24,6 @@
         width: 22rem;
         margin: 3rem 1rem;
     }
-
-
-
     &__num{
         box-sizing: border-box;
         position: absolute;
@@ -79,7 +76,6 @@
         @media screen and (min-width:1150px) {
             left: -5%;
         }
-
     }
     &__icone{
         box-sizing: border-box;
@@ -114,7 +110,6 @@
             width: 2.1rem;
             height: 2.1rem;
         }
-
     }
     &__texte{
         box-sizing: border-box;
@@ -129,7 +124,5 @@
         @media screen and (min-width:550px) {
             font-size: 1.4rem;
         }
-
-
     }
 }

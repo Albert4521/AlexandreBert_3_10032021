@@ -21,6 +21,11 @@
         margin-top: 0px;
     }       
 }
+@keyframes PopUp{
+    0%{transform:scale(1);z-index: 1;};
+    99%{transform:scale(1);z-index: 1;};
+    100%{transform:scale(0);z-index: 0;};
+}
 @keyframes Chargement{
     0%{visibility: visible;transform: scale(0)};
     3%{transform: rotate(11.25deg) scale(0.1); opacity:1;};
